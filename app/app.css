@@ -1,30 +1,63 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #18252E;
+    position: fixed;
+    height: 100%;
+    
+    overflow: auto;
+    
+    font-family: verdana;
+    font-size: 11px;
+}
+*/
+#header {
+    background-color: #18252E;
+    height: 50px;
+    padding-right: 20px;
+    border-bottom: 5px solid #EE5C5C;
+   
 }
 
-.menu:before {
-  content: "[";
+#nav ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    border-right: 5px solid #EE5C5C;
+    padding: 0 0 0 0;
+    width: 15%;
+    background-color: #18252E;
+    position: fixed;
+    height: 200%;
+    overflow: auto;
+    font-family: verdana;
+    font-size: 14px;
 }
 
-.menu:after {
-  content: "]";
+#nav li a {
+    display: block;
+    color: #0CCD87;
+    padding: 8px 0 4px 16px;
+    text-decoration: none;
+    border-bottom: .5px solid white;
 }
 
-.menu > li {
-  display: inline;
+#nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+/*
+#main {
+background: black;
+}
+*/
+#article {
+    margin: -25px 0px 0px 300px;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
