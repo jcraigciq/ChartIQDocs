@@ -3,6 +3,7 @@
     background-color: #18252E;
     height: 50px;
     padding-right: 20px;
+    top: 0px;
 /*    border-bottom: 2px solid #EE5C5C; */
 }
 
@@ -38,20 +39,21 @@
     font-family: verdana;
     font-size: 14px;
 }
-/*
-#article.MobileSS img {
-    width: 336px;
-    height: 597px;
-}
-*/
+
 .MobileSS {
     width: 313px;
     height: 557px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 30px 20px;
 }
-/*
-.mobileqs img {
-    width: 1px; 
-    height: 1px;
+.MobileSSfloat {
+    width: 313px;
+    height: 557px;
+    padding: 0px 20px 30px 20px;
+    float:left;
 }
-*/
+
+.panel {
+    margin-top: 20px;
+    padding: 0px 0px 10px 0px;
+    width: 803px;
+}
