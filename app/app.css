@@ -1,34 +1,15 @@
 /* app css stylesheet */
-
-
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: #18252E;
-    position: fixed;
-    height: 100%;
-    
-    overflow: auto;
-    
-    font-family: verdana;
-    font-size: 11px;
-}
-*/
 #header {
     background-color: #18252E;
     height: 50px;
     padding-right: 20px;
-    border-bottom: 5px solid #EE5C5C;
-   
+/*    border-bottom: 2px solid #EE5C5C; */
 }
 
 #nav ul {
     list-style-type: none;
     margin: 0 0 0 0;
-    border-right: 5px solid #EE5C5C;
+/*    border-right: 2px solid #EE5C5C; */
     padding: 0 0 0 0;
     width: 15%;
     background-color: #18252E;
@@ -52,12 +33,25 @@ ul {
     color: white;
 }
 
+#article {
+    margin: 10px 0px 0px 300px;
+    font-family: verdana;
+    font-size: 14px;
+}
 /*
-#main {
-background: black;
+#article.MobileSS img {
+    width: 336px;
+    height: 597px;
 }
 */
-#article {
-    margin: -25px 0px 0px 300px;
+.MobileSS {
+    width: 313px;
+    height: 557px;
+    padding: 0px 20px 0px 20px;
 }
-
+/*
+.mobileqs img {
+    width: 1px; 
+    height: 1px;
+}
+*/
