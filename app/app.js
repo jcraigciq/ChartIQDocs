@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
+  'myApp.webTraderGuide',
   'myApp.upgradeWebTrader',
   'myApp.mobileQuickstart',
   'myApp.version'
