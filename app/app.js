@@ -1,13 +1,13 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('ciqDocs', [
   'ngRoute',
-  'myApp.home',
-  'myApp.webTraderGuide',
-  'myApp.upgradeWebTrader',
-  'myApp.mobileQuickstart',
-  'myApp.version'
+  'ciqDocs.home',
+  'ciqDocs.webTraderGuide',
+  'ciqDocs.upgradeWebTrader',
+  'ciqDocs.mobileQuickstart',
+  'ciqDocs.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});

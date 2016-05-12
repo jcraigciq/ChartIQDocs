@@ -4,25 +4,25 @@ background-image: none;
 background-color: #1C3348;
 }
 
-
-.container {
+.container-nav {
     margin-left: -1%;
 }
 
-.container a {
+.container-nav a {
     color: white;
     font-size: 16px;
 }
-.container ul {
+
+.container-nav ul {
 margin-top: 1%;
 }
 
-.container li {
+.container-nav li {
    display: inline;
    padding: 1% 0% 5% 2%;
 }
 
-.container img {
+.container-nav img {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -32,28 +32,47 @@ margin-top: 1%;
     padding-right:20px;
 }
 
-#article {
-    
-    margin: 5% 10% 10% 10%;
-    
+.article {
+    margin: 4% 10% 10% 10%;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
+}
+.article h1{
+  border-bottom: 1px solid ;
+}
+
+.article h3{
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #1C3348;
+  color: white;
+  font-size: 20px;
+}
+
+.articleSection {
+    min-width: 40%;
+    width: 60%;
+    height: 100px;
+    box-shadow:0;
+}
+
+.MobileSSFloatTop {
+    width: 313px;
+    height: 557px;
+    padding: 0px 10px 30px 0px;
+    float:left;
+}
+
+.MobileSSfloat {
+    width: 313px;
+    height: 557px;
+    padding: 0px 10px 50px 0px;
+    float:left;
 }
 
 .MobileSS {
     width: 313px;
     height: 557px;
-    padding: 0px 20px 30px 20px;
 }
-.MobileSSfloat {
-    width: 313px;
-    height: 557px;
-    padding: 0px 20px 30px 20px;
-    float:left;
-}
-
-.panel {
-
-}
-
-

@@ -1,8 +1,8 @@
 'use strict';
 
-describe('myApp.upgradeWebTrader module', function() {
+describe('ciqDocs.upgradeWebTrader module', function() {
 
-  beforeEach(module('myApp.upgradeWebTrader'));
+  beforeEach(module('ciqDocs.upgradeWebTrader'));
 
   describe('upgradeWebTrader controller', function(){
 

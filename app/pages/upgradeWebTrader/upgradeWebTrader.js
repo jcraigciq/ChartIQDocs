@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.upgradeWebTrader', ['ngRoute'])
+angular.module('ciqDocs.upgradeWebTrader', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/upgradeWebTrader', {

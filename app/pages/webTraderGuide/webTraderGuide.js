@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.webTraderGuide', ['ngRoute'])
+angular.module('ciqDocs.webTraderGuide', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/webTraderGuide', {

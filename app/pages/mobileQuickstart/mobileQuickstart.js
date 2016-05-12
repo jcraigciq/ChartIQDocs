@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.mobileQuickstart', ['ngRoute'])
+angular.module('ciqDocs.mobileQuickstart', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/mobileQuickstart', {
