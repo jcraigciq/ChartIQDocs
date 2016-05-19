@@ -39,7 +39,7 @@ margin-top: 1%;
 }
 .article h1{
   border-bottom: 1px solid ;
-  margin-left: -12%;
+
 }
 
 .article h3{
@@ -84,11 +84,11 @@ margin-top: 1%;
 }
 
 .container-subnav a {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .container-subnav ul {
-margin-top: 1%;
+margin-top: -5%;
 }
 
 .container-subnav li {
