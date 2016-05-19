@@ -42,6 +42,6 @@ ciqDocs.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
       $location.hash(scrollTo);
 
       // call $anchorScroll()
-      $anchorScroll();
+      $anchorScroll.yOffset = 50;
     };
   }]);
