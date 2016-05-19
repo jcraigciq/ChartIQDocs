@@ -1,35 +1,40 @@
 <div class="article">
 <h1>Mobile Quickstart Guide</h1>
-<br>
+
+<div id="scrollArea" ng-controller="ScrollController">
+  <a ng-click="hashScroll('logout')">Logout</a>
+</div>
+
 	<!--Section 1-->
-	<div class="articleSection" style="clear:both">
+	<div id="mobile" class="articleSection" style="clear:both">
 		<h3>WebTrader for Mobile</h3> 
-		<p><img class="MobileSSfloat" src="images/mqsg-1.png">Access <strong>WebTrader</strong> for Mobile by navigating to the following link on your mobile device: <a href="http://webtrader.chartiq.com/mobile">WebTrader for Mobile</a></p>
+		<p><img class="MobileSSfloat" src="images/mqsg-1.png">Access <strong>WebTrader</strong> for Mobile by navigating to the following link on your mobile device: <a href="http://webtrader.chartiq.com/mobile" target="_new
+		">WebTrader for Mobile</a></p>
 	</div>
 
 	<!--Section 2-->
-	<div class="articleSection" style="clear:both">
+	<div id="login" class="articleSection" style="clear:both">
 		<h3>Login</h3>
 		<img class="MobileSSfloat" src="images/mqsg-2.png">
 		<p> Enter the credentials provided to you in the <strong>WebTrader</strong>  demo email. Tap <strong>Login</strong>  at the bottom of the screen to continue.</p>
 	</div>
 
 	<!--Section 3-->
-	<div class="articleSection" style="clear:both">
+	<div id="marketWatch" class="articleSection" style="clear:both">
 		<h3>Market Watch</h3>
 		<img class="MobileSSfloat" src="images/mqsg-3.png">
 		<p>You will be taken directly to the <strong>Market Watch</strong> screen upon logging in. The <strong>Market Watch</strong> component displays real time quotes for all currency pairs that the you have access to trade.   From here, you can tap on any currency pair to display it in the charting module.</p>
 	</div>
 
 	<!--Section 4-->
-	<div class="articleSection" style="clear:both">
+	<div id="charting" class="articleSection" style="clear:both">
 		<h3>Charting</h3>
 		<img class="MobileSSfloat" src="images/mqsg-4.png">
 		<p>This is the <strong>EURUSD</strong> currency pair plotted with a <em>Candle</em> Chart Style and a <em>30 Minute</em> Chart Period.</p>
 	</div>
 
 	<!--Section 5-->
-	<div class="articleSection" style="clear:both">
+	<div id="chartSettings" class="articleSection" style="clear:both">
 		<h3>Chart Settings</h3>
 		<img class="MobileSSFloatTop" src="images/mqsg-5.png"> 
 		<p>You can adjust the Chart Style, Period, and Study by tapping the <img src="images/mqsg-cog.png" style="width:30px;height:30px;"> icon in the top right corner of the application. After each selection, the chart will refresh.</p>
@@ -39,14 +44,14 @@
 	</div>
 
 	<!--Section 6-->
-	<div class="articleSection" style="clear:both">
+	<div id="chartSettingsExample" class="articleSection" style="clear:both">
 		<h3>Charting Settings Example</h3>
 		<img class="MobileSSfloat" src="images/mqsg-8.png">
 		<p>This is the <strong>EURUSD</strong> currency pair plotted with a <em>Line</em> Chart Style, <em>5 Minute Chart</em> Period, and a <em>Kagi</em> Chart Study after modifying the chart settings.</p>
 	</div>
 
 	<!--Section 7-->
-	<div class="articleSection" style="clear:both">
+	<div id="tradingChart" class="articleSection" style="clear:both">
 		<h3>Trading from the Chart</h3>
 		<img class="MobileSSfloat" src="images/mqsg-9.png">
 		<p>You can execute trades directly from the charting module. Tapping the <strong>Buy</strong> or <strong>Sell</strong> buttons will have two different outcomes depending on if <strong>OneTap Trading</strong> is enabled or not.</p>
@@ -58,14 +63,14 @@
 	</div>
 
 	<!--Section 8-->
-	<div class="articleSection" style="clear:both">
+	<div id="" class="articleSection" style="clear:both">
 		<h3>App Navigation</h3>
 		<img class="MobileSSfloat" src="images/mqsg-10.png">
 		<p>To access other modules of the application, press the <img src="images/mqsg-menu.png" style="width:68px;height:32px;"> icon at the top left hand corner of the screen. The current module will always display in green, in this example, our current module is the <strong>Market Watch</strong>.</p>
 	</div>
 
 	<!--Section 9-->
-	<div class="articleSection" style="clear:both">
+	<div id="openPositions" class="articleSection" style="clear:both">
 		<h3>Open Positions</h3>
 		<img class="MobileSSFloatTop" src="images/mqsg-11.png">
 		<p>The <strong>Open Positions</strong> module displays all open positions that you currently hold. Tapping on a specific order opens up additional options for that order.</p>
@@ -82,7 +87,7 @@
 	</div>
 
 	<!--Section 10-->
-	<div class="articleSection" style="clear:both">
+	<div id="pendingOrders" class="articleSection" style="clear:both">
 		<h3>Pending Orders</h3>
 		<img class="MobileSSFloatTop" src="images/mqsg-14.png">
 		<p>The <strong>Pending Orders</strong> module enables you to execute a trade based on preset conditions. Once the conditions are met, the order will execute. </p>
@@ -98,28 +103,28 @@
 	</div>
 
 	<!--Section 11-->
-	<div class="articleSection" style="clear:both">
+	<div id="summary" class="articleSection" style="clear:both">
 		<h3>Summary</h3>
 		<img class="MobileSSfloat" src="images/mqsg-18.png">
 		<p>The <strong>Summary</strong> module aggregates all open positions by Symbol. This module allows you to close all positions at once based on the Symbol. In order to <strong>Close All</strong> from the <strong>Summary</strong> module, you <strong><u>MUST</u></strong> have <strong>OneTap Trading</strong> enabled (you will receive a notification to turn it on if it is not enabled).</p>
 	</div>
 
 	<!--Section 12-->
-	<div class="articleSection" style="clear:both">
+	<div id="history" class="articleSection" style="clear:both">
 		<h3>History</h3>
 		<img class="MobileSSfloat" src="images/mqsg-19.png">
 		<p>The <strong>History</strong> module displays every order you have executed in <strong>WebTrader</strong>.  The information displayed includes the <em>Order ID, Symbol, Volume, Type,</em> and <em>Profit</em>. </p>
 	</div>
 
 	<!--Section 13-->
-	<div class="articleSection" style="clear:both">
+	<div id="transactions" class="articleSection" style="clear:both">
 		<h3>Transactions</h3>
 		<img class="MobileSSfloat" src="images/mqsg-20.png">
 		<p>The <strong>Transactions</strong> module displays all credits and debits to the account that is currently logged in. The information displayed includes the <em>Transaction ID, Type,</em> and <em>Amount</em>.</p>
 	</div>
 
 	<!--Section 14-->
-	<div class="articleSection" style="clear:both">
+	<div id="settings" class="articleSection" style="clear:both">
 		<h3>Settings</h3>
 		<img class="MobileSSfloat" src="images/mqsg-21.png">
 		<p>The <strong>Settings</strong> module allows the user to adjust several options for the <strong>WebTrader</strong> mobile application.</p>
@@ -130,8 +135,7 @@
 	</div>
 
 	<!--Section 15-->
-	<div class="articleSection" style="clear:both">
-		<a name="Logout"></a>
+	<div id="logout" class="articleSection" style="clear:both">
 		<h3>Logout</h3>
 		<img class="MobileSSfloat" src="images/mqsg-22.png">
 		<p>The <strong>Logout</strong> option logs out your account from <strong>WebTrader</strong> and returns you to the login screen.</p>
