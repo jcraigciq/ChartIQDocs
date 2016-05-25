@@ -21,19 +21,6 @@ $routeProvider.
    otherwise({redirectTo: '/home'});
 }]);
 
-    ciqDocs.controller('myctrl', function ($scope) {
-      $scope.filename = "test";
-      $scope.persons = [{name: "Justin", age: 27}];
-  // $scope.persons = new array();
-  //$scope.persons = {};
-
-      $scope.addData = function(name, age) {
-        $scope.persons.push({name: name, age: age });
-      };
-
-      $scope.getHeader = function () {return ["name", "age"]};
-    });
-
 ciqDocs.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
   function ($scope, $location, $anchorScroll) {
     $scope.hashScroll = function(scrollTo) {

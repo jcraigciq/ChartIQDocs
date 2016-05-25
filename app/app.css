@@ -33,7 +33,7 @@ margin-top: 1%;
 }
 
 .article {
-    margin: 4% 10% 10% 10%;
+    margin: 4% 10% 10% 20%;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
@@ -79,7 +79,7 @@ margin-top: 1%;
 }
 
 .container-subnav {
-    margin-left: -11%;
+    margin-left: 0%;
     position: fixed;
 }
 
