@@ -18,6 +18,15 @@ $routeProvider.
 	when('/upgradeWebTrader', {
     templateUrl: 'pages/upgradeWebTrader/upgradeWebTrader.html'}).
 
+  when('/middlewareGuide', {
+    templateUrl: 'pages/middlewareGuide/middlewareGuide.html'}).
+
+  when('/webTraderPlugin', {
+    templateUrl: 'pages/webTraderPlugin/webTraderPlugin.html'}).
+
+  when('/contactUs', {
+    templateUrl: 'pages/contactUs/contactUs.html'}).
+
    otherwise({redirectTo: '/home'});
 }]);
 

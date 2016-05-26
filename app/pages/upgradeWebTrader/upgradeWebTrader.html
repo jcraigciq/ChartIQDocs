@@ -1,18 +1,74 @@
 <!--Sub Navigation-->
 <nav class="subnavbar subnavbar-default" ng-controller="ScrollController">
-		<div class="container-subnav">
-			<ul>
-				<li><a href="" ng-click="hashScroll('mobile')">WebTrader Mobile</a></li>
-			</ul>
-		</div>
-	</nav>
+	<div class="container-subnav">
+		<ul>
+			<li><a href="" ng-click="hashScroll('upgrade')">Upgrade Process</a></li>
+			<li><a href="" ng-click="hashScroll('notes')">Notes</a></li>
+			<li><a href="" ng-click="hashScroll('trouble')">Troubleshooting</a></li>
+		</ul>
+	</div>
+</nav>
 
 <div class="article">
 	<h1>Upgrade WebTrader</h1>
 	<!--Section 1-->
-	<div id="mobile" class="articleSection" style="clear:both">
-		<h3>WebTrader for Mobile</h3> 
-		<p><img class="MobileSSfloat" src="images/mqsg-1.png">Access <strong>WebTrader</strong> for Mobile by navigating to the following link on your mobile device: <a href="http://webtrader.chartiq.com/mobile" target="_new
-			">WebTrader for Mobile</a></p>
+	<div id="upgrade" class="articleSection" style="clear:both">
+		<h3>Upgrade Process</h3>
+		<div> 
+			<p>1. Navigate to the directory that contains the WebTrader application files.</p>
+			<img class="regularSS" src="images/uwt/uwt-1.png">
 		</div>
+		<br></br>
+		<div>
+			<p>2. Copy the folder the contains the WebTrader application files.</p> 
+			<img class="regularSS" src="images/uwt/uwt-2.png">
+		</div>
+		<br></br>
+		<div>
+			<p>3. Paste the copied folder in a safe location for backing files and folders up.  In this example we will paste the backup folder in the same directory as our live WebTrader application files.  Rename the backup folder to reflect the contents.</p>
+			<img class="regularSS" src="images/uwt/uwt-3.png">
+		</div>
+		<br></br>
+		<div>
+			<p>4. Extract the attached WebTrader Upgrade build into the location of your choice.</p>  
+			<img class="regularSS" src="images/uwt/uwt-4.png"> 
+            <br></br>
+			<img class="dialogSS-2" src="images/uwt/uwt-5.png">
+		</div>
+		<br></br>
+		<div>
+			<p>5. Navigate to the directory that contains the newly extracted WebTrader Upgrade application files.  Copy all files in this directory.</p>
+			<img class="regularSS-2" src="images/uwt/uwt-6.png">
+		</div>
+		<br></br>
+		<div>
+			<p>6.	Navigate back to the directory that contains the current version of WebTrader (the same folder we copied in step 2).  Paste the files that you just copied into the directory that contains the current version of WebTrader.</p>
+			<img class="regularSS" src="images/uwt/uwt-7.png">
+		</div>
+		<br></br>
+		<div>
+			<p>7.	If you are prompted about Replacing, Skipping, or Renaming files, select Replace existing files in the destination.  This will ensure that your copy of WebTrader will contain all updated application files.</p> 
+			<img class="dialogSS" src="images/uwt/uwt-8.png">
+			<br></br>
+			<p>That’s it! Your WebTrader application has been upgraded to the latest build. If you are having issues, please review the Notes and Troubleshooting information below. If your issue still persists, contact us!</p>
+		</div>
+	</div>
+
+	<!--Section 2-->
+	<div id="notes" class="articleSection" style="clear:both">
+		<h3>Notes</h3>
+		<p><strong>Note:</strong> If the entire WebTrader application folder was deleted before uploading/copying the new build, the config.js file will need to be uploaded/copied.  This file can be grabbed from the original WebTrader application folder that was backed up in step 2.  The path to access this file is: <em>/js/config.js</em>.</p>
+
+		<p><strong>Note:</strong> The chart license is already included in the attached upgrade build; no additional configuration is necessary for this component.</p> 
+	</div>
+
+	<!--Section 3-->
+	<div id="trouble" class="articleSection" style="clear:both">
+		<h3>Troubleshooting</h3>
+		<h4><em>I still see the old WebTrader!</em></h4>
+		<p>Clear the web browser cache on your machine.</p>
+		<h4><em>I do not see any charts, but everything else works.</em></h4>
+		<p>Your domain name is not allowed by the Chart License.  Please send us the full domain name so that we are able to send you an updated build. </p>
+		<h4><em>The WebTrader doesn’t load at all!</em></h4>
+		<p>Open the developer console and refresh the WebTrader page.  Gather the error messages from the console and send them to us so that we are able to further investigate the issue.</p>
 	</div>

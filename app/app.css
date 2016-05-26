@@ -55,7 +55,7 @@ margin-top: 1%;
 .articleSection {
     min-width: 40%;
     width: 60%;
-    height: 100px;
+    height: 100%;
     box-shadow:0;
 }
 
@@ -78,8 +78,28 @@ margin-top: 1%;
     height: 557px;
 }
 
+.regularSS{
+   width: 674px;
+   height: 382px;
+}
+
+.regularSS-2{
+   width: 677px;
+   height: 322px;
+}
+
+.dialogSS{
+   width: 449px;
+   height: 290px;
+}
+
+.dialogSS-2{
+   width: 459px;
+   height: 378px;
+}
+
 .container-subnav {
-    margin-left: 0%;
+    margin-top: 1%;
     position: fixed;
 }
 
@@ -93,3 +113,5 @@ margin-top: -5%;
 
 .container-subnav li {
 }
+
+
