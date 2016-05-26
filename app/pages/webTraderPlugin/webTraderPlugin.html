@@ -1,77 +1,97 @@
+<!--Sub Navigation-->
+<nav class="subnavbar subnavbar-default" ng-controller="ScrollController">
+	<div class="container-subnav">
+		<ul>
+			<li><a href="" ng-click="hashScroll('instructions')">Instructions</a></li>
+			<li><a href="" ng-click="hashScroll('params')">MT4 Administrator Parameters</a></li>
+			<li><a href="" ng-click="hashScroll('hosting')">ChartIQ Hosted Middleware</a></li>
+		</ul>
+	</div>
+</nav>
 <div class="article">
 	<h1>WebTrader MT4 Plugin Installation Guide</h1>
+	<div id="instructions" class="articleSection" style="clear:both">
+		<h3>Instructions</h3>
+		<p>1. <a href="">Download the plugin</a>.</p>
 
-	<p>1. <a href="">Download the plugin</a>.</p>
+		<p>2. Unzip the compressed file.</p>
 
-	<p>2. Unzip the compressed file.</p>
+		<p>3. Copy the <strong>qlwebtrader-2k8s.dll</strong> file from the unzipped folder.</p>
 
-	<p>3. Copy the <strong>qlwebtrader-2k8s.dll</strong> file from the unzipped folder.</p>
+		<p>4. Place the <strong>qlwebtrader-2k8s.dll</strong> file in the following directory: <em>c:/MetaTrader4Server/plugins/</em></p>
 
-	<p>4. Place the <strong>qlwebtrader-2k8s.dll</strong> file in the following directory: <em>c:/MetaTrader4Server/plugins/</em></p>
+		<p>5. Restart the MT4 server.</p>
 
-	<p>5. Restart the MT4 server.</p>
+		<p>6. Login to <strong>MT4 Administrator</strong> and configure the parameters shown in the next section.</p>
+	</div>
 
-	<p>6. Login to <strong>MT4 Administrator</strong> and set the following parameters:</p>
+	<div id="params" class="articleSection" style="clear:both">
+		<h3>MT4 Administrator Parameters</h3>	
 
-	<p><strong>WT Balance operations</strong> 
-		<br>
-		n - flag to allow balance operations from <strong>WebTrader</strong> 
-		<br>
-		(0 - denied, 1 - permitted)</p>
-
-		<p><strong>Allowed off-quote time</strong> 
+		<p><strong>WT Balance operations</strong> 
 			<br>
-			n - allowed off-quote time in seconds</p>
+			n - flag to allow balance operations from <strong>WebTrader</strong> 
+			<br>
+			(0 - denied, 1 - permitted)</p>
 
-			<p><strong>IP Whitelist</strong>
-				<br> 
-				127.0.0.1 - comma separated list of IPs from which connection to the plugin permitted</p>
+			<p><strong>Allowed off-quote time</strong> 
+				<br>
+				n - allowed off-quote time in seconds</p>
 
-				<p><strong>Max command queue size</strong> 
-					<br>
-					n - the size of the queue for the commands requested from the <strong>WebTrader Web Engine</strong>
+				<p><strong>IP Whitelist</strong>
 					<br> 
-					default is set to 500, increase in the case of high requests flow (>1k per second)</p>
+					127.0.0.1 - comma separated list of IPs from which connection to the plugin permitted</p>
 
-					<p><strong>Max connections</strong>
+					<p><strong>Max command queue size</strong> 
+						<br>
+						n - the size of the queue for the commands requested from the <strong>WebTrader Web Engine</strong>
 						<br> 
-						n - max number of incoming connections from the <strong>WebTrader Web Engine</strong>.
-						<br> 
-						(at a minimum the value should be the number of <strong>Web Engine</strong> nodes times 2)</p>
+						default is set to 500, increase in the case of high requests flow (>1k per second)</p>
 
-						<p><strong>Max price diff (%)</strong>
+						<p><strong>Max connections</strong>
 							<br> 
-							n - max difference between the order and market price in %</p>
+							n - max number of incoming connections from the <strong>WebTrader Web Engine</strong>.
+							<br> 
+							(at a minimum the value should be the number of <strong>Web Engine</strong> nodes times 2)</p>
 
-							<p><strong>Number of workers</strong>
+							<p><strong>Max price diff (%)</strong>
 								<br> 
-								n - number of workers to handle requests 
-								<br>
-								(at a minimum the value should be 2)</p>
+								n - max difference between the order and market price in %</p>
 
-								<p><strong>Port to Listen</strong>
+								<p><strong>Number of workers</strong>
 									<br> 
-									n - the port which plugin listens for incoming connections from webengine</p>
+									n - number of workers to handle requests 
+									<br>
+									(at a minimum the value should be 2)</p>
 
-									<p><strong>Price IE from market</strong>
+									<p><strong>Port to Listen</strong>
 										<br> 
-										0 - use the price from <strong>WebTrader</strong> for <em>Instant Execution</em> order
-										<br> 
-										1 - for <em>Instant Execution</em> order takes the price from the market</p>
+										n - the port which plugin listens for incoming connections from the <strong>WebTrader Web Engine</strong></p>
 
-										<p><strong>WT Reporting</strong> 
-											<br>
-											n - reporting level for <strong>WebTrader</strong> 
-											<br>
-											(0 - reporting max, 5 - reporting min)</p>
+										<p><strong>Price IE from market</strong>
+											<br> 
+											0 - use the price from <strong>WebTrader</strong> for <em>Instant Execution</em> order
+											<br> 
+											1 - for <em>Instant Execution</em> order takes the price from the market</p>
 
-											<p><strong>Web API key</strong>
-												<br> 
-												some_string - used for <strong>WebTrader Web Engine</strong> authorization (leave blank if whitelist is set)</p>
+											<p><strong>WT Reporting</strong> 
 												<br>
-												<h4><em>If ChartIQ is hosting the WebTrader middleware for your company:</em></h4>
+												n - reporting level for <strong>WebTrader</strong> 
+												<br>
+												(0 - reporting max, 5 - reporting min)</p>
 
-												<p>7. After the plugin parameters are configured, copy the <strong>plugin.ini</strong> file from the <em>c:/MetaTrader4Server/plugins/</em> directory.</p>
+												<p><strong>Web API key</strong>
+													<br> 
+													some_string - used for <strong>WebTrader Web Engine</strong> authorization 
+													<br>(leave blank if whitelist is set)</p>
+												</div>
+												
+												<div id="hosting" class="articleSection" style="clear:both">
+													<h3>If ChartIQ is hosting your WebTrader Middleware...</h3>
 
-												<p>8. Please send the <strong>plugin.ini</strong> file back to ChartIQ for final configuration of our middleware and your MT4 server.</p>
-											</div>
+
+
+													<p>7. After the plugin parameters are configured, copy the <strong>plugin.ini</strong> file from the <em>c:/MetaTrader4Server/plugins/</em> directory.</p>
+
+													<p>8. Please send the <strong>plugin.ini</strong> file back to <strong>ChartIQ</strong> to finalize connecting your MT4 server to the hosted <strong>WebTrader Middleware</strong>.</p>
+												</div>

@@ -1,3 +1,547 @@
 <div class="article">
 	<h1>WebTrader Guide</h1>
+
+<!--Section #-->
+<div id="" class="articleSection" style="clear:both">
+<h3></h3> 
+<p></p>
+</div>
+
+<!--Section 1-->
+<div id="" class="articleSection" style="clear:both">
+<h3>Introduction</h3> 
+<p>WebTrader is an HTML5 application developed in Angular 1.x. Each user interface (UI) component is represented by an Angular "partial" (a self-contained block of HTML code) and a corresponding Angular controller (a js file that contains business logic and binding code). Angular data-binding automatically updates the state of the UI.</p>
+<p>A set of Angular "services" provide connectivity and utility functions. The connectivity services use the socket.io library to communicate with ChartIQ's Middleware for MT4.</p>
+</div>
+
+
+WebTrader Interface 
+ 
+Interface Components
+
+<!--Section #-->
+<div id="navigation" class="articleSection" style="clear:both">
+<h3>Navigation</h3> 
+<p>The navigation menu contains basic application functionality.</p>
+Description:  
+
+ 
+1.	File
+	New Order – Opens the New Order Dialog.
+	Logout – Logs the user out of the application back to the main Login Screen.
+2.	Tools – Click to access all charting tools available to WebTrader:
+	Cursor
+	CrossHair
+	Line Tool
+	Vertical Line
+	Horizontal Line
+	Fibonacci
+	Ray
+	Annotation
+	Rectangle
+	Eclipse 
+3.	Settings – Opens the general Settings dialog. 
+4.	Help – Currently not a functioning menu option. 
+5.	Logout - Logs the user out of the application and returns the application back to the main login screen.
+6.	   - Allows the user to select what language the application is displayed in.  The default selection is English.
+7.	  - Opens the One-Click Trading dialog. From here the user can choose to Enable or Disable One-Click Trading.
+	  - The One-Click Trading dialog.
+
+8.	    - Toggles to enable or disable all sounds associated with WebTrader.
+9.	  - Toggles to show or hide the Statistics component.
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="" class="articleSection" style="clear:both">
+<h3>Market Watch</h3> 
+<p>Description:  
+The Market Watch component displays real time quotes for all Symbols that the user has access to trade.  This component also includes features to start a New Order/New Pending Order dialog or plot the Symbol in the ChartDock.
+
+1.	 
+
+The trading portion of this component has two different behaviors depending on if the user has One-Click Trading enabled or not.  If One-Click Trading is enabled then the user is able to input the Volume, SL PIPS, TP PIPS and then click Buy/Sell to instantly trigger the transaction.  If One-Click Trading is disabled, then clicking Buy/Sell will trigger the New Order/New Pending Order dialog. 
+
+2.	 
+
+The user can also trigger the New Order/New Pending Order dialog by pressing the   icon in the top right hand corner of the expanded Symbol dialog.   
+
+3.	 
+
+The   icon enables you to plot the Symbol on the ChartDock.  After clicking the   icon, a context menu will appear that prompts you for the chart interval to apply to the x-axis of the chart.
+
+4.	 
+
+The different chart interval options are:
+	1 Minute
+	5 Minutes
+	15 Minutes
+	30 Minutes
+	1 Hour
+	4 Hours
+	1 Day
+	1 Week
+	1 Month</p>
+</div>
+
+ 
+
+
+
+
+
+<!--Section #-->
+<div id="" class="articleSection" style="clear:both">
+<h3>Account Overview</h3> 
+<p>Description:  
+The information in Account Overview is polled every 80 milliseconds and updated every time a trade is executed. The metrics provided are:
+	Balance
+	Equity
+	Margin
+	Free Margin
+	Margin Level
+	Open PL</p>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="chartDock" class="articleSection" style="clear:both">
+<h3>ChartDock</h3> 
+<p>Description:
+The ChartDock enables traders to keep multiple charts (up to 10) running in the same browser window. The flexible interface allows users to slide and stack charts, or let the application automatically dock charts in a grid pattern. Charts on the ChartDock can be quickly manipulated on the fly by right-clicking them to access an additional options menu.
+
+
+1.	  -Displays the Symbol and chart interval in the top left hand corner of each chart. 
+
+2.	  - Displays the Spread for the current Symbol in the top right corner of the chart.
+3.	  - Enables the user to zoom the individual charts in the ChartDock in and out.
+
+4.	  - Opens the Chart Settings dialog, allowing the user to edit individual charts in the ChartDock. Configurable options include Style, Type, and Studies.
+
+a.	  
+b.	Style options:
+	Candle
+	Bar
+	Line
+	Mountain
+	Colored Bar
+	Hollow
+	Baseline Delta
+	Vol Candle
+c.	Type options:
+	Heikin-Ashi
+	Kagi
+	Line Break
+	Point & Figure
+	Range Bars
+	Renko
+	None
+
+d.	Studies options:
+	Refer to the Chart Studies dialog in WebTrader to see all Studies available.
+
+
+5.	  - Toggles the trading from the chart dialog.
+	 
+*NOTE: One-Click Trading has to be enabled in order to utilize trading from the chart. 
+
+6.	  - Right click a chart in the ChartDock to access a chart context menu.
+a.	  - Triggers a New Pending Order dialog for the Symbol the user is viewing.
+b.	  - Triggers a New Order dialog for the Symbol the user is viewing.
+c.	  - Triggers the Chart Studies dialog. 
+d.	  - Opens another context menu to change the chart interval.
+</p>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="chartTools" class="articleSection" style="clear:both">
+<h3>Chart Tools</h3> 
+<p>
+Description:
+The Chart Tools component is an icon based menu that allows users to access all of the Chart Tools in WebTrader.  These are the same tools that are available under the Tools menu in the Navigation component.  This menu contains one additional feature that Navigation Tools does not - the last icon gives the user the ability to select what color the selected tool displays on the chart.  
+
+1.	Auto-Arrange/Manual-Arrange charts on the ChartDock
+2.	Cursor
+3.	CrossHair
+4.	Line Tool
+5.	Vertical Line
+6.	Horizontal Line
+7.	Fibonacci
+8.	Ray
+9.	Annotation
+10.	Rectangle
+11.	Eclipse 
+12.	Color Picker</p>
+</div>
+
+ 
+
+
+
+
+
+<!--Section #-->
+<div id="" class="articleSection" style="clear:both">
+<h3></h3> 
+<p></p>
+</div>
+Tabs
+1.	Open Positions
+ 
+Description: 
+The Open Positions tab displays all open positions that the user currently holds.  This tab also includes additional features that the user can select for each individual position or all of them as a whole. 
+1.	  - Close all open positions based on the following additional criteria that the user selects:
+a.	All Winning
+b.	All Losing
+c.	All Buy
+d.	All Sell
+e.	All Positions 
+2.	  - Triggers the New Order dialog that allows the creation of a New Order/New Pending Order.
+3.	  - Plots the Symbol on the WebTrader Chart component that is associated with the order ID selected.
+4.	    - Triggers the Modify Position dialog for the order ID selected which enables the user to Update or Close the position as well as adjust the Stop Loss and Take Profit parameters.   
+5.	  - Triggers the Modify Position dialog for the order ID selected which enables the user to Update or Close the position as well as adjust the Stop Loss and Take Profit parameters.   
+6.	    - Triggers the Modify Position dialog for the order ID selected which enables the user to Update or Close the position as well as adjust the Stop Loss and Take Profit parameters. 
+7.	  - Enables the user to filter open positions by typing in a specific symbol.
+8.	  - Enables the user to filter open positions by selecting to view only Buys, Sells, or ALL open positions.
+
+
+2.	Summary
+ 
+Description:  
+The Summary tab aggregates all Open Positions by Symbol, Buy Positions, Sell Positions, Sell Volume, Net Volume, Average Price, Commission, Swaps, Pips, and Profit.  It also enables the user to trigger the New Order dialog or do a Close All on positions that are aggregated together.
+1.	  - Closes all open positions based on the aggregated positions selected.  This feature can only be selected in the Summary tab if One-Click-Trading is activated, otherwise, the following dialog will be displayed to the user:
+ 
+
+2.	  - Triggers the New Order dialog that allows the creation of a New Order/New Pending Order.
+3.	  - Enables the user to filter Open Positions by typing in a specific Symbol.
+ 
+
+3.	Pending Orders
+ 
+Description: 
+The Pending Orders tab displays all pending orders that the user currently has.  It also enables the user to modify or delete the selected order.  
+1.	  - Triggers the Modify Pending Order dialog for the pending order ID selected which enables the user to update or delete the pending order as well adjust the stipulations of the pending order.   
+2.	  - Deletes the pending order.  
+Warning: there is no additional confirmation once this button is pressed, the deletion happens immediately.   
+3.	  - Enables the user to filter pending orders by typing in a specific symbol.
+
+
+4.	History
+ 
+Description:  
+The History tab displays detailed historical information on each completed order that has been opened and closed by the user. 
+
+
+5.	Transactions
+ 
+Description:  
+The Transaction tab displays all deposits and withdrawals from the users trading account. 
+
+
+
+
+
+6.	News
+ 
+Description:  Currently the News tab does not function.  This is a work in progress.  The tab will allow the user to search a specific Symbol and retrieve the latest news on that Symbol. 
+
+
+
+
+<!--Section #-->
+<div id="stats" class="articleSection" style="clear:both">
+<h3>Statistics</h3> 
+<p> 
+ 	Description:  
+	The Statistics component displays various metrics that describe the user’s trading performance. This information is accessible
+	by clicking the   icon in the top right of the application.</p>
+</div>
+
+
+<!--Section #-->
+<div id="footer" class="articleSection" style="clear:both">
+<h3>Footer</h3> 
+<p>Description:  
+The Footer is split into two sections.  The left section shows the Open, Close, High, Low, and Volume based on the cursors position on any chart in the ChartDock. The right section shows the Account Number, Leverage available to the account, Credit available to the account, and the name of the Server that the user is connected to. </p>
+</div>
+
+ 
+
+Dialogs
+
+
+
+<!--Section #-->
+<div id="" class="articleSection" style="clear:both">
+<h3>Login</h3> 
+<p>                
+ 	Description: 
+Standard Login screen with Server, Account, and Password inputs.
+  
+
+
+
+
+Description: 
+Standard Login screen with Email and Password inputs. 
+</p>
+</div>
+
+	
+
+
+
+
+
+
+<!--Section #-->
+<div id="newO" class="articleSection" style="clear:both">
+<h3>New Order</h3> 
+<p> 
+Description: 
+This dialog enables the user to place a New Order.  The user can choose to click New Pending to trigger the New Pending Order dialog.  
+
+1.	  - Enables the user to toggle between New Order and New Pending Order.
+2.	  - Dropdown selector for picking the Symbol.
+3.	  - Input for the Volume size of a trade.
+4.	  - Enables the user to select a Side for the transaction, Buy or Sell. 
+
+5.	  - Input for setting the Stop Loss value.
+6.	  - Shows current loss based on the Stop Loss value.
+7.	  - Input for setting the Take Profit value.
+8.	  - Shows current profit based on the Take Profit value.
+9.	  - Comment for the trade (logged in MT4).
+10.	  - Displays the Bid and Ask for the Symbol selected.
+11.	 
+  - Buy/Sell will display at the bottom right of the dialog depending on the Side. Click Buy/Sell to execute the trade.  </p>
+</div>
+
+
+
+
+
+<!--Section #-->
+<div id="newPO" class="articleSection" style="clear:both">
+<h3>New Pending Order</h3> 
+<p>Description: 
+This dialog enables the user to place a New Pending Order.  The user can choose to click New Order to trigger the New Order dialog.  
+
+1.	  - Enables the user to toggle between New Order and New Pending Order.
+2.	  - Dropdown selector for picking the Symbol.
+3.	  - Input for the Volume size of a trade.
+
+
+4.	  - Drop down menu for choosing the Type of transaction, these include:
+a.	Buy Limit
+b.	Sell Limit
+c.	Buy Stop
+d.	Sell Stop
+5.	  - Input for user to set the Price condition.
+6.	  - Input for setting the Stop Loss value.
+7.	  - Shows current loss based on the Stop Loss value.
+8.	  - Input for setting the Take Profit value.
+9.	  - Shows current profit based on the Take Profit value.
+10.	  - Input for user to set the date and time that the New Pending Order will expire on.  
+11.	  - Comment for the trade (logged in MT4).
+12.	  - Displays the Bid and Ask for the Symbol selected.
+13.	  - Click to Place the Pending Order.
+</p>
+</div>
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="modifypo" class="articleSection" style="clear:both">
+<h3>Modify Pending Order</h3> 
+<p>Description:
+A dialog menu for enabling the user to modify a pending order.
+
+1.	  - Enables the user to toggle between New Order and New Pending Order.  - Drop down menu for the user to select which Pending Order they wish to modify.
+2.	  - Drop down menu for choosing the Type of transaction, these include:
+a.	Buy Limit
+b.	Sell Limit
+c.	Buy Stop
+d.	Sell Stop
+3.	  - Input for user to set the Price condition.
+4.	  - Input for setting the Stop Loss value.
+5.	  - Shows current loss based on the Stop Loss value.
+6.	  - Input for setting the Take Profit value.
+7.	  - Shows current profit based on the Take Profit value.
+8.	  - Input for user to set the date and time that the New Pending Order will expire on.  
+9.	  - Comment for the trade (logged in MT4).
+10.	  - Displays the Bid and Ask for the Symbol selected.
+11.	  - Updates the Pending Order with the latest inputs from the user.
+12.	  - Deletes the Pending Order completely. </p>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="modifypos" class="articleSection" style="clear:both">
+<h3>Modify Position</h3> 
+<p>Description:
+A dialog menu for enabling the user to update or close an open position.
+1.	  - Enables the user to switch to a New Order or New Pending Order.
+2.	  - Drop down menu for the user to select which Position they wish to modify.
+3.	  - Input for setting the Stop Loss value.
+4.	  - Shows current loss based on the Stop Loss value.
+5.	  - Input for setting the Take Profit value.
+6.	  - Shows current profit based on the Take Profit value.
+7.	  - Displays the Bid and Ask for the Symbol selected.
+8.	  - Update the position with the latest inputs from the user.
+9.	  - Close the open position.</p>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section #-->
+<div id="settings" class="articleSection" style="clear:both">
+<h3>Settings</h3> 
+<p>Description:  
+The Settings dialog enables the user to configure general settings of the WebTrader application.
+
+1.	Display Ask Line - Enables or Disables Ask Lines in the ChartDock.
+ 
+
+2.	Display Bid Line - Enables or Disables Bid Lines in the ChartDock.
+ 
+
+3.	One-Click Trading – Enables or Disables the One-Click Trading option. 
+
+4.	Play Sounds – Enables or Disables all sounds related to WebTrader. 
+
+5.	Trades On Chart – Enables or Disables user trades displaying in the ChartDock.</p>
+</div>
+
+ 
+
+ 
+
+<!--Section #-->
+<div id="chartstudies" class="articleSection" style="clear:both">
+<h3>Chart Studies</h3> 
+<p>Description:  
+This is the Chart Studies dialog. Select an indicator to bring up additional settings and enable it to be plotted on a chart in the ChartDock. </p>
+</div>
+
+ 
+
+
+
+
+
+
+<!--Section #-->
+<div id="oneclick" class="articleSection" style="clear:both">
+<h3>One-Click Trading</h3> 
+<p>Description:  
+The One-Click Trading dialog allows the user to enable the functionality of One-Click Trading, which executes trades immediately after the order is placed.  This feature should be utilized by advanced users only.  This feature can be enabled from two different areas in the application:
+1.	  - Inside of the Settings dialog.
+2.	  - Toggle button in the top right hand corner of the application.
+</p>
+</div>
 </div>

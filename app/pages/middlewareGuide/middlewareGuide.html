@@ -1,3 +1,253 @@
 <div class="article">
 	<h1>Middleware Installation</h1>
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.	Create a folder on the server’s main hard drive named ChartIQ.
+  
+2.	Download the Current version (latest features) of NodeJS by visiting https://nodejs.org/en/.
+ 
+3.	Place the files downloaded for NodeJS into the ChartIQ folder. 
+ 
+
+4.	Place the ChartService.zip and QuotesService.zip files into the ChartIQ folder.
+ 
+5.	Double-click the NodeJS Windows Installer Package to install NodeJS.  Click Next to continue.
+ 
+6.	Check the I accept the terms in the License Agreement box then click Next to continue. 
+ 
+
+
+
+
+
+7.	Select the directory that NodeJS will be installed on.  The default directory is sufficient unless special requirements dictate otherwise. Click Next to continue. 
+ 
+8.	Click Next on the Custom Setup screen to continue with the installation.
+ 
+9.	Select Install on the Ready to install Node.js screen. 
+ 
+10.	Click Finish to complete the setup!
+ 
+
+
+
+
+
+
+11.	Right-click ChartService.zip and select the Extract All… option.
+  
+12.	Click Extract on the next screen.
+ 
+
+
+13.	The extracted files will now be displayed on the screen. Double-click ChartService-master to open the folder.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+14.	Right-click the bin folder and click copy. 
+ 
+15.	Navigate back to the ChartIQ folder.  Right-click and select Paste to copy the bin folder.
+ 
+16.	Select both the ChartService files, right-click them, and select the Delete option. 
+ 
+17.	Right-click the bin folder and select the Rename option.  Rename the folder to ChartService.  
+ 
+18.	Right-click QuotesService.zip and select the Extract All… option.
+  
+19.	Click Extract on the next screen.
+ 
+
+
+20.	The extracted files will now be displayed on the screen. Double-click QuotesService-master to open the folder.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21.	Right-click the bin folder and click copy. 
+ 
+22.	Navigate back to the ChartIQ folder.  Right-click and select Paste to copy the bin folder.
+ 
+23.	Select both the QuotesService files, right-click them, and select the Delete option. 
+ 
+24.	Right-click the bin folder and select the Rename option.  Rename the folder to QuoteService.  
+ 
+25.	The ChartIQ folder should now look like the following screenshot:
+ 
+26.	Double-click the ChartService folder. Right-click the config file and select the option Open with Notepad.
+  
+27.	Changes need to be made to the config file so that it can work with your environment.  The first change is the Filename parameter under the [Logger] section.   
+ 
+A.	Filename
+Before: Filename=C:\work\c++\itrader\bin\charts-%datetime{%Y-%M-%d}.log
+After:    Filename=C:\ChartIQ\logs\charts\charts-%datetime{%Y-%M-%d}.log
+*Note: The path you change the Filename parameter to may slightly differ based on the location of your ChartIQ folder. 
+
+28.	 The following parameters in the [Feeder] section need to be changed based on your MT4 and environment information: Manager, Password, Address, Port, and Environment.
+a.	Manager – MT4 Manager Account login
+b.	Password – MT4 Manager Account password
+c.	Address – IP of MT4 Server
+d.	Port – Port that the service will listen on
+e.	Environment – Name of the service that you are installing
+29.	Double-click the QuoteService folder. Right-click the config file and select the option Open with Notepad.
+  
+30.	Changes need to be made to the config file so that it can work with your environment.  The first change is the Filename parameter under the [Logger] section.   
+ 
+B.	Filename
+Before: Filename=C:\work\c++\ifeeder\bin\feeder-%datetime{%Y-%M-%d}.log
+After:    Filename=C:\ChartIQ\logs\feeder\feeder-%datetime{%Y-%M-%d}.log
+ *Note: The path you change the Filename parameter to may slightly differ based on the location of your ChartIQ folder. 
+
+31.	 The following parameters in the [Feeder] section need to be changed based on your MT4 and environment information: Manager, Password, Address, Port, and Environment.
+a.	Manager – MT4 Manager Account login
+b.	Password – MT4 Manager Account password
+c.	Address – IP of MT4 Server
+d.	Port – Port that the service will listen on (increment by 1 from Quote Service)
+e.	Environment – Name of the service that you are installing
+*Note: The [Feeder] section from the ChartService config file can be copied and used to replace the entire [Feeder] section of the QuoteService config file. 
+32. Open Command prompt and navigate to the ChartIQ\ChartService directory.
+ 
+ 
+32.	input the following command:
+a.	icharts-static.exe -console <environment name>
+i.	NOTE: Use the environment name used in the configuration files above.
+b.	 
+c.	This screen means we are good to go.
+d.	If you receive an error, please check your configuration files. 
+e.	Logs will automatically be generated.
+f.	Exit out of the CMD line after successful execution of ichart-static.exe
+g.	Open CMD line and input the following command: icharts-static.exe -install <environment name>
+h.	 
+i.	Success screen
+32. Open Command prompt and navigate to the ChartIQ\QuoteService directory.
+ 
+1.	input the following command:
+a.	ifeeder-static.exe -console <environment name>
+i.	NOTE: Use the environment name used in the configuration files above.
+b.	 
+c.	This screen means we are good to go.
+d.	If you receive an error, please check your configuration files. 
+e.	Logs will automatically be generated.
+f.	Exit out of the CMD line after successful execution of ifeeder-static.exe
+g.	Open CMD line and input the following command: ifeeder-static.exe -install <environment name>
+h.	 
+i.	Success screen 
+2.	 Now we are going to start the services. In the CMD prompt type in ‘services.msc’
+3.	 
+4.	 
+5.	Now it’s time to test the services.
+6.	Make sure to have Telnet enabled on your Windows Machine. 
+To enable Telnet command line utilities:
+7.	Click Start > Control Panel.
+8.	Click Programs and Features.
+ 
+9.	Click Turn Windows features on or off.
+10.	In the Windows Features dialog box, check the Telnet Client check box.
+ 
+11.	Click OK. The system will install the appropriate files. This will take a few seconds to a minute. 
+
+a.	Open up CMD Prompt
+b.	enter command: telnet localhost <service port> (use both one of the ports defined in the config files above)
+c.	SUCCESS =  
+d.	to exit telnet, hit ‘ctrl + ]’ then type quit and hit enter
+e.	enter command: telnet localhost <service port> (use the other one of the ports defined in the config files above)
+f.	SUCCESS  
+g.	to exit telnet, hit ‘ctrl + ]’ then type quit and hit enter
+12.	Open up CMD Prompt and Enter the CMD : npm install pm2 -g
+13.	I assume we will package up the WebTrader Engine Start Script for clients.
+a.	make sure we do \ and not /
+14.	Go to GitHub and download the webtrade engine zip. unzip the engine and paste the folder into ChartIQ.
+15.	Open command prompt and navigate to C:\ChartIQ\engine. Enter the command npm install 
+
+16.	Open cmd prompt, navigate to ChartIQ, and type pm2 start engines.json
+
+17.	Download NGINX and unzip to ChartIQ Directory. 
+
+18.	Get the NGINX confi file from github (Nginconf - Single WS domain)
+19.	navigate to ChartIQ\nginx-1.8.1\conf\nginx.conf
+a.	paste github code in here
+b.	Upstream Live {
+ip_hash;
+c.	server localhost: 4040
+}
+d.	ServerName = beeks IP
+e.	Make Sure Upstream Matches engine configuration
+20.	If WebTrader is hosted on the same machine as the engine:
+a.	Specify the location of the app besides ‘root’.
+b.	Make sure Upstream matches engine configuration
+21.	Navigate to C:\ChartIQ\nginx-1.8.1 and double click ‘nginx.exe’
+
+
+
+
+
+
+
+
+
 </div>
