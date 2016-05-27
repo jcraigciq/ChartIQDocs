@@ -10,7 +10,6 @@
 <!--Section 1-->
 <div id="" class="articleSection" style="clear:both">
 <h3>Introduction</h3>
-<img class="fullScreenSS" src="images/wtg/wtg-1.png"> 
 <p>WebTrader is an HTML5 application developed in Angular 1.x. Each user interface (UI) component is represented by an Angular "partial" (a self-contained block of HTML code) and a corresponding Angular controller (a js file that contains business logic and binding code). Angular data-binding automatically updates the state of the UI.</p>
 <p>A set of Angular "services" provide connectivity and utility functions. The connectivity services use the socket.io library to communicate with ChartIQ's Middleware for MT4.</p>
 <p>
@@ -20,8 +19,7 @@ This modular design allows developers to take individual pieces of WebTrader and
 <!--Section 2-->
 <div id="wtInterface" class="articleSection" style="clear:both">
 <h3>WebTrader Interface Components</h3> 
-<img class="fullScreenSS" src="images/wtg/wtg-2.png">
-<p>Use the above annotated screen shot to...
+<img class="fullScreenSS" src="images/wtg/wtg-1.png" style="margin-bottom: 2%"> 
 </div>
 
 <!--Section 2.1-->
@@ -59,21 +57,21 @@ This modular design allows developers to take individual pieces of WebTrader and
 </ul>
 </div>  
 
-<!--Section 2.3-->
+<!--Section 2.2-->
 <div id="custom" class="articleSection" style="clear:both">
 <h4>Market Watch</h4>
 <img class="custom" src="images/wtg/wtg-10.png" width=324px; height=678px; > 
 <p>The Market Watch component displays real time quotes for all Symbols that the user has access to trade.  This component also includes features to start a New Order/New Pending Order dialog or plot the Symbol in the <strong>ChartDock</strong>.<p>
-<img class="custom" src="images/wtg/wtg-11.png" width=300px; height=100px; >
+<img class="custom" src="images/wtg/wtg-11.png" width=277px; height=163px; style="margin-bottom: 1%">
 <p>The trading portion of this component has two different behaviors depending on if the user has One-Click Trading enabled or not.  If One-Click Trading is enabled then the user is able to input the Volume, SL PIPS, TP PIPS and then click Buy/Sell to instantly trigger the transaction.  If One-Click Trading is disabled, then clicking Buy/Sell will trigger the New Order/New Pending Order dialog.</p> 
-<img class="custom" src="images/wtg/wtg-12.png" width=300px; height=100px; >
+<img class="custom" src="images/wtg/wtg-12.png" width=299px; height=177px; style="margin-bottom: 1%">
 <p>The user can also trigger the New Order/New Pending Order dialog by pressing the   icon in the top right hand corner of the expanded Symbol dialog.</p>   	 
-<img class="custom" src="images/wtg/wtg-13.png" width=300px; height=100px; >
-<p>The   icon enables you to plot the Symbol on the <strong>ChartDock</strong>.  After clicking the   icon, a context menu will appear that prompts you for the chart interval to apply to the x-axis of the chart.</p>
+<img class="custom" src="images/wtg/wtg-13.png" width=278px; height=167px; style="margin-bottom: 1%">
+<p>The <img class="custom" src="images/wtg/wtg-118.png" width=29px; height=25px; style="margin-bottom: 1%"> icon enables you to plot the Symbol on the <strong>ChartDock</strong>.  After clicking the <img class="custom" src="images/wtg/wtg-118.png" width=29px; height=25px; style="margin-bottom: 1%"> icon, a context menu will appear that prompts you for the chart interval to apply to the x-axis of the chart.</p>
 
 	 
-<img class="custom" src="images/wtg/wtg-14.png" width=300px; height=100px; >
-<p>The different chart interval options are:</p>
+<img class="custom" src="images/wtg/wtg-14.png" width=283px; height=267px; style="margin-bottom: 1%">
+<p>The chart interval options are:</p>
 <ul>
 <li>1 Minute</li>
 <li>5 Minutes</li>
@@ -87,148 +85,106 @@ This modular design allows developers to take individual pieces of WebTrader and
 </ul>
 </div>
 
- 
-
-
-
-
-
-<!--Section #-->
+<!--Section 2.3-->
 <div id="" class="articleSection" style="clear:both">
-<h4>Account Overview</h4> 
-<p>Description:  
-The information in Account Overview is polled every 80 milliseconds and updated every time a trade is executed. The metrics provided are:
-	Balance
-	Equity
-	Margin
-	Free Margin
-	Margin Level
-	Open PL</p>
-<img class="custom" src="images/wtg/wtg-15.png" width=300px; height=100px; >
+<h4>Account Overview</h4>
+<img class="custom" src="images/wtg/wtg-15.png" width=856px; height=39px; style="margin-bottom: 1%"> 
+<p>The information in Account Overview is polled every 80 milliseconds and updated every time a trade is executed. The metrics provided are:</p>
+<ul>  
+<li>Balance</li>
+<li>Equity</li>
+<li>Margin</li>
+<li>Free Margin</li>
+<li>Margin Level</li>
+<li>Open PL</li>
+</ul>
 </div>
 
- 
 
 
 
 
 
 
+<!--Section 2.4-->
+<div id="chartDock" class="articleSection" style="clear:both">
+<h4>ChartDock</h4> 
+<img class="custom" src="images/wtg/wtg-16.png" width=1095px; height=495px; style="margin-bottom: 1%">
+<p>
+The <strong>ChartDock</strong> enables traders to keep multiple charts (up to 10) running in the same browser window. The flexible interface allows users to slide and stack charts, or let the application automatically dock charts in a grid pattern. Charts on the <strong>ChartDock</strong> can be quickly manipulated on the fly by right-clicking them to access an additional options menu.</p>
 
+<ul>
+<li><img class="custom" src="images/wtg/wtg-17.png" width=147px; height=39px; style="margin-bottom: 1%"> - Displays the Symbol and chart interval in the top left hand corner of each chart. </li>
+<li><img class="custom" src="images/wtg/wtg-18.png" width=47px; height=41px; style="margin-bottom: 1%"> - Displays the Spread for the current Symbol in the top right corner of the chart.</li>
+<li><img class="custom" src="images/wtg/wtg-19.png" width=149px; height=61px; style="margin-bottom: 1%"> - Enables the user to zoom the individual charts in the <strong>ChartDock</strong> in and out.</li>
+<li><img class="custom" src="images/wtg/wtg-20.png" width=31px; height=31px; style="margin-bottom: 1%"> - Opens the Chart Settings dialog, allowing the user to edit individual charts in the <strong>ChartDock</strong>. Configurable options include Style, Type, and Studies.</li>
+<ul>
+<li><img class="custom" src="images/wtg/wtg-21.png" width=295px; height=240px; style="margin-bottom: 1%"></li>
+<ul>
+<li>Style options</li>
+<ul>
+<li>Candle</li>
+<li>Bar</li>
+<li>Line</li>
+<li>Mountain</li>
+<li>Colored Bar</li>
+<li>Hollow</li>
+<li>Baseline Delta</li>
+<li>Vol Candle</li>
+</ul>
+<li>Type options</li>
+<ul>
+<li>Heikin-Ashi</li>
+<li>Kagi</li>
+<li>Line Break</li>
+<li>Point & Figure</li>
+<li>Range Bars</li>
+<li>Renko</li>
+<li>None</li>
+</ul>
+<li>Studies options</li>
+<ul>
+<li>Refer to the Chart Studies dialog in WebTrader to see all Studies available.</li>
+</ul>
+</ul>
+</ul> 
+</ul>
+<li><img class="custom" src="images/wtg/wtg-22.png" width=23px; height=33px; style="margin-bottom: 1%"> - Toggles the trading from the chart dialog.</li>
+<ul>
+<li> <img class="custom" src="images/wtg/wtg-23.png" width=259px; height=213px; style="margin-bottom: 1%"></li>
+<strong>*NOTE: One-Click Trading</strong> has to be enabled in order to utilize trading from the chart. 
+</ul>
+<li><img class="custom" src="images/wtg/wtg-24.png" width=156px; height=174px; style="margin-bottom: 1%"> - Right click a chart in the <strong>ChartDock</strong> to access a chart context menu.</li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Section #-->
-<div id="ChartDock" class="articleSection" style="clear:both">
-<h4><strong>ChartDock</strong></h4> 
-<p>Description:
-The <strong>ChartDock</strong> enables traders to keep multiple charts (up to 10) running in the same browser window. The flexible interface allows users to slide and stack charts, or let the application automatically dock charts in a grid pattern. Charts on the <strong>ChartDock</strong> can be quickly manipulated on the fly by right-clicking them to access an additional options menu.
-
-
-1.	  -Displays the Symbol and chart interval in the top left hand corner of each chart. 
-
-2.	  - Displays the Spread for the current Symbol in the top right corner of the chart.
-3.	  - Enables the user to zoom the individual charts in the <strong>ChartDock</strong> in and out.
-
-4.	  - Opens the Chart Settings dialog, allowing the user to edit individual charts in the <strong>ChartDock</strong>. Configurable options include Style, Type, and Studies.
-
-a.	  
-b.	Style options:
-	Candle
-	Bar
-	Line
-	Mountain
-	Colored Bar
-	Hollow
-	Baseline Delta
-	Vol Candle
-c.	Type options:
-	Heikin-Ashi
-	Kagi
-	Line Break
-	Point & Figure
-	Range Bars
-	Renko
-	None
-
-d.	Studies options:
-	Refer to the Chart Studies dialog in WebTrader to see all Studies available.
-
-
-5.	  - Toggles the trading from the chart dialog.
-	 
-*NOTE: One-Click Trading has to be enabled in order to utilize trading from the chart. 
-
-6.	  - Right click a chart in the <strong>ChartDock</strong> to access a chart context menu.
-a.	  - Triggers a New Pending Order dialog for the Symbol the user is viewing.
-b.	  - Triggers a New Order dialog for the Symbol the user is viewing.
-c.	  - Triggers the Chart Studies dialog. 
-d.	  - Opens another context menu to change the chart interval.
-</p>
-<img class="custom" src="images/wtg/wtg-16.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-17.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-18.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-19.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-20.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-21.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-22.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-23.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-24.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-25.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-26.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-27.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-28.png" width=300px; height=100px; >
+<ul>
+<li><img class="custom" src="images/wtg/wtg-25.png" width=138px; height=56px; style="margin-bottom: 1%"> - Opens a New Pending Order dialog for the Symbol the user is viewing.</li>
+<li><img class="custom" src="images/wtg/wtg-26.png" width=91px; height=31px; style="margin-bottom: 1%"> - Opens a New Order dialog for the Symbol the user is viewing.</li>
+<li><img class="custom" src="images/wtg/wtg-27.png" width=98px; height=33px; style="margin-bottom: 1%"> - Opens the Chart Studies dialog.</li>
+<li><img class="custom" src="images/wtg/wtg-28.png" width=100px; height=30px; style="margin-bottom: 1%"> - Opens another context menu to change the chart interval.</li>
+</ul>
 </div>
-
- 
-
-
-
-
-
-
-
 
 <!--Section #-->
 <div id="chartTools" class="articleSection" style="clear:both">
 <h4>Chart Tools</h4> 
 <p>
-Description:
-The Chart Tools component is an icon based menu that allows users to access all of the Chart Tools in WebTrader.  These are the same tools that are available under the Tools menu in the Navigation component.  This menu contains one additional feature that Navigation Tools does not - the last icon gives the user the ability to select what color the selected tool displays on the chart.  
-
-1.	Auto-Arrange/Manual-Arrange charts on the <strong>ChartDock</strong>
-2.	Cursor
-3.	CrossHair
-4.	Line Tool
-5.	Vertical Line
-6.	Horizontal Line
-7.	Fibonacci
-8.	Ray
-9.	Annotation
-10.	Rectangle
-11.	Eclipse 
-12.	Color Picker</p>
-<img class="custom" src="images/wtg/wtg-29.png" width=300px; height=100px; >
+The <strong>Chart Tools</strong> component is an icon based menu that allows users to access all of the <strong>Chart Tools</strong> in <strong>WebTrader</strong>.  These are the same tools that are available under the Tools menu in the Navigation component.  This menu contains one additional feature that Navigation Tools does not - the last icon gives the user the ability to select what color the selected tool displays on the chart.</p>  
+<img class="custom" src="images/wtg/wtg-29.png" width=73px; height=408px; style="margin-bottom: 1%; margin-right: 4%; float: left" >
+<ol>
+<li>Auto-Arrange/Manual-Arrange charts on the <strong>ChartDock</strong></li>
+<li>Cursor</li>
+<li>CrossHair</li>
+<li>Line Tool</li>
+<li>Vertical Line</li>
+<li>Horizontal Line</li>
+<li>Fibonacci</li>
+<li>Ray</li>
+<li>Annotation</li>
+<li>Rectangle</li>
+<li>Eclipse</li> 
+<li>Color Picker</li>
+</ol>
 </div>
-
- 
-
-
-
-
 
 <!--Section #-->
 <div id="" class="articleSection" style="clear:both">
@@ -243,7 +199,6 @@ The Chart Tools component is an icon based menu that allows users to access all 
 <img class="custom" src="images/wtg/wtg-35.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-36.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-37.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-38.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-39.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-40.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-41.png" width=300px; height=100px; >
@@ -598,6 +553,9 @@ The Settings dialog enables the user to configure general settings of the WebTra
  
 
 <!--Section #-->
+<img class="custom" src="images/wtg/wtg-112.png" width=300px; height=100px; >
+<img class="custom" src="images/wtg/wtg-113.png" width=300px; height=100px; >
+<img class="custom" src="images/wtg/wtg-114.png" width=300px; height=100px; >
 <div id="chartstudies" class="articleSection" style="clear:both">
 <h4>Chart Studies</h4> 
 <p>Description:  
@@ -615,17 +573,11 @@ This is the Chart Studies dialog. Select an indicator to bring up additional set
 <!--Section #-->
 <div id="oneclick" class="articleSection" style="clear:both">
 <h4>One-Click Trading</h4> 
-<p>Description:  
+<img class="custom" src="images/wtg/wtg-115.png" width=897px; height=465px; >
+<p>
 The One-Click Trading dialog allows the user to enable the functionality of One-Click Trading, which executes trades immediately after the order is placed.  This feature should be utilized by advanced users only.  This feature can be enabled from two different areas in the application:
-1.	  - Inside of the Settings dialog.
-2.	  - Toggle button in the top right hand corner of the application.
+<img class="custom" src="images/wtg/wtg-116.png" width=594px; height=353px; > - Inside of the Settings dialog.
+<img class="custom" src="images/wtg/wtg-117.png" width=396px; height=53px; > - Toggle button in the top right hand corner of the application.
 </p>
-<img class="custom" src="images/wtg/wtg-112.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-113.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-114.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-115.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-116.png" width=300px; height=100px; >
-<img class="custom" src="images/wtg/wtg-117.png" width=300px; height=100px; >
-
 </div>
 </div>
