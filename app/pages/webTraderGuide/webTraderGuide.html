@@ -17,14 +17,14 @@
 This modular design allows developers to take individual pieces of WebTrader and insert them into their own website. HTML and CSS may be modified to taste to fit the aesthetics of the site. Angular "filters" can be used to transform data when necessary and controllers can be used either off-the-shelf, or as a starting point for exposing additional data to the user interface.</p>
 </div>
 
-<!--Section #-->
+<!--Section 2-->
 <div id="wtInterface" class="articleSection" style="clear:both">
 <h3>WebTrader Interface Components</h3> 
 <img class="fullScreenSS" src="images/wtg/wtg-2.png">
 <p>Use the above annotated screen shot to...
 </div>
 
-<!--Section #-->
+<!--Section 2.1-->
 <div id="navigation" class="articleSection" style="clear:both">
 <h4>Navigation</h4>
 <img class="custom" src="images/wtg/wtg-3.png" width=910px; height=30px;> 
@@ -59,65 +59,32 @@ This modular design allows developers to take individual pieces of WebTrader and
 </ul>
 </div>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Section #-->
+<!--Section 2.3-->
 <div id="custom" class="articleSection" style="clear:both">
-<h4>Market Watch</h4> 
-<p>Description:  
-The Market Watch component displays real time quotes for all Symbols that the user has access to trade.  This component also includes features to start a New Order/New Pending Order dialog or plot the Symbol in the ChartDock.
-
-1.	 
-
-The trading portion of this component has two different behaviors depending on if the user has One-Click Trading enabled or not.  If One-Click Trading is enabled then the user is able to input the Volume, SL PIPS, TP PIPS and then click Buy/Sell to instantly trigger the transaction.  If One-Click Trading is disabled, then clicking Buy/Sell will trigger the New Order/New Pending Order dialog. 
-
-2.	 
-
-The user can also trigger the New Order/New Pending Order dialog by pressing the   icon in the top right hand corner of the expanded Symbol dialog.   
-
-3.	 
-
-The   icon enables you to plot the Symbol on the ChartDock.  After clicking the   icon, a context menu will appear that prompts you for the chart interval to apply to the x-axis of the chart.
-
-4.	 
-
-The different chart interval options are:
-	1 Minute
-	5 Minutes
-	15 Minutes
-	30 Minutes
-	1 Hour
-	4 Hours
-	1 Day
-	1 Week
-	1 Month</p>
-
-<img class="custom" src="images/wtg/wtg-10.png" width=300px; height=100px; >
+<h4>Market Watch</h4>
+<img class="custom" src="images/wtg/wtg-10.png" width=324px; height=678px; > 
+<p>The Market Watch component displays real time quotes for all Symbols that the user has access to trade.  This component also includes features to start a New Order/New Pending Order dialog or plot the Symbol in the <strong>ChartDock</strong>.<p>
 <img class="custom" src="images/wtg/wtg-11.png" width=300px; height=100px; >
+<p>The trading portion of this component has two different behaviors depending on if the user has One-Click Trading enabled or not.  If One-Click Trading is enabled then the user is able to input the Volume, SL PIPS, TP PIPS and then click Buy/Sell to instantly trigger the transaction.  If One-Click Trading is disabled, then clicking Buy/Sell will trigger the New Order/New Pending Order dialog.</p> 
 <img class="custom" src="images/wtg/wtg-12.png" width=300px; height=100px; >
+<p>The user can also trigger the New Order/New Pending Order dialog by pressing the   icon in the top right hand corner of the expanded Symbol dialog.</p>   	 
 <img class="custom" src="images/wtg/wtg-13.png" width=300px; height=100px; >
+<p>The   icon enables you to plot the Symbol on the <strong>ChartDock</strong>.  After clicking the   icon, a context menu will appear that prompts you for the chart interval to apply to the x-axis of the chart.</p>
+
+	 
 <img class="custom" src="images/wtg/wtg-14.png" width=300px; height=100px; >
+<p>The different chart interval options are:</p>
+<ul>
+<li>1 Minute</li>
+<li>5 Minutes</li>
+<li>15 Minutes</li>
+<li>30 Minutes</li>
+<li>1 Hour</li>
+<li>4 Hours</li>
+<li>1 Day</li>
+<li>1 Week</li>
+<li>1 Month</li>
+</ul>
 </div>
 
  
@@ -165,18 +132,18 @@ The information in Account Overview is polled every 80 milliseconds and updated 
 
 
 <!--Section #-->
-<div id="chartDock" class="articleSection" style="clear:both">
-<h4>ChartDock</h4> 
+<div id="ChartDock" class="articleSection" style="clear:both">
+<h4><strong>ChartDock</strong></h4> 
 <p>Description:
-The ChartDock enables traders to keep multiple charts (up to 10) running in the same browser window. The flexible interface allows users to slide and stack charts, or let the application automatically dock charts in a grid pattern. Charts on the ChartDock can be quickly manipulated on the fly by right-clicking them to access an additional options menu.
+The <strong>ChartDock</strong> enables traders to keep multiple charts (up to 10) running in the same browser window. The flexible interface allows users to slide and stack charts, or let the application automatically dock charts in a grid pattern. Charts on the <strong>ChartDock</strong> can be quickly manipulated on the fly by right-clicking them to access an additional options menu.
 
 
 1.	  -Displays the Symbol and chart interval in the top left hand corner of each chart. 
 
 2.	  - Displays the Spread for the current Symbol in the top right corner of the chart.
-3.	  - Enables the user to zoom the individual charts in the ChartDock in and out.
+3.	  - Enables the user to zoom the individual charts in the <strong>ChartDock</strong> in and out.
 
-4.	  - Opens the Chart Settings dialog, allowing the user to edit individual charts in the ChartDock. Configurable options include Style, Type, and Studies.
+4.	  - Opens the Chart Settings dialog, allowing the user to edit individual charts in the <strong>ChartDock</strong>. Configurable options include Style, Type, and Studies.
 
 a.	  
 b.	Style options:
@@ -205,7 +172,7 @@ d.	Studies options:
 	 
 *NOTE: One-Click Trading has to be enabled in order to utilize trading from the chart. 
 
-6.	  - Right click a chart in the ChartDock to access a chart context menu.
+6.	  - Right click a chart in the <strong>ChartDock</strong> to access a chart context menu.
 a.	  - Triggers a New Pending Order dialog for the Symbol the user is viewing.
 b.	  - Triggers a New Order dialog for the Symbol the user is viewing.
 c.	  - Triggers the Chart Studies dialog. 
@@ -242,7 +209,7 @@ d.	  - Opens another context menu to change the chart interval.
 Description:
 The Chart Tools component is an icon based menu that allows users to access all of the Chart Tools in WebTrader.  These are the same tools that are available under the Tools menu in the Navigation component.  This menu contains one additional feature that Navigation Tools does not - the last icon gives the user the ability to select what color the selected tool displays on the chart.  
 
-1.	Auto-Arrange/Manual-Arrange charts on the ChartDock
+1.	Auto-Arrange/Manual-Arrange charts on the <strong>ChartDock</strong>
 2.	Cursor
 3.	CrossHair
 4.	Line Tool
@@ -370,7 +337,7 @@ Description:  Currently the News tab does not function.  This is a work in progr
 <div id="footer" class="articleSection" style="clear:both">
 <h4>Footer</h4> 
 <p>Description:  
-The Footer is split into two sections.  The left section shows the Open, Close, High, Low, and Volume based on the cursors position on any chart in the ChartDock. The right section shows the Account Number, Leverage available to the account, Credit available to the account, and the name of the Server that the user is connected to. </p>
+The Footer is split into two sections.  The left section shows the Open, Close, High, Low, and Volume based on the cursors position on any chart in the <strong>ChartDock</strong>. The right section shows the Account Number, Leverage available to the account, Credit available to the account, and the name of the Server that the user is connected to. </p>
 <img class="custom" src="images/wtg/wtg-55.png" width=300px; height=100px; >
 </div>
 
@@ -608,17 +575,17 @@ A dialog menu for enabling the user to update or close an open position.
 <p>Description:  
 The Settings dialog enables the user to configure general settings of the WebTrader application.
 
-1.	Display Ask Line - Enables or Disables Ask Lines in the ChartDock.
+1.	Display Ask Line - Enables or Disables Ask Lines in the <strong>ChartDock</strong>.
  
 
-2.	Display Bid Line - Enables or Disables Bid Lines in the ChartDock.
+2.	Display Bid Line - Enables or Disables Bid Lines in the <strong>ChartDock</strong>.
  
 
 3.	One-Click Trading – Enables or Disables the One-Click Trading option. 
 
 4.	Play Sounds – Enables or Disables all sounds related to WebTrader. 
 
-5.	Trades On Chart – Enables or Disables user trades displaying in the ChartDock.</p>
+5.	Trades On Chart – Enables or Disables user trades displaying in the <strong>ChartDock</strong>.</p>
 <img class="custom" src="images/wtg/wtg-107.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-108.png" width=300px; height=100px; >
 <img class="custom" src="images/wtg/wtg-109.png" width=300px; height=100px; >
@@ -634,7 +601,7 @@ The Settings dialog enables the user to configure general settings of the WebTra
 <div id="chartstudies" class="articleSection" style="clear:both">
 <h4>Chart Studies</h4> 
 <p>Description:  
-This is the Chart Studies dialog. Select an indicator to bring up additional settings and enable it to be plotted on a chart in the ChartDock. </p>
+This is the Chart Studies dialog. Select an indicator to bring up additional settings and enable it to be plotted on a chart in the <strong>ChartDock</strong>. </p>
 <img class="custom" src="images/wtg/wtg-111.png" width=300px; height=100px; >
 </div>
 
