@@ -1,20 +1,12 @@
 <div class="article">
 	<h1>Middleware Installation</h1>
-<ul>
-<li>installing Node.js</li>
-<li>installing ChartIQ Windows Services</li>
-<li>enabling Telnet server</li>
-<li>configuring ChartIQ Node.js</li>
-<li>installing nginx</li>
-<li>configuring nginx</li>
-<li>sample downloads</li>
-</ul>
 
+1.	Create a folder on the server’s main hard drive named ChartIQ.
 
 <!--Section #-->
 <div id="introduction" class="articleSection" style="clear:both">
-<h3>Chart IQ's MT4 Middleware</h3>
-<p>Our Middleware is written in NodeJS/Socket.io and it provides a web socket API. NginX is used as a reverse proxy and load balancer. Our Middleware enables the following features:</p>
+<h3>ChartIQ's MT4 Middleware</h3>
+<p>ChartIQ's Middleware is written in NodeJS/Socket.io and it provides a web socket API. NginX is used as a reverse proxy and load balancer. Our Middleware enables the following features:</p>
 <ul>
 <li>Authenticate MT4 users</li>
 <li>Retrieve MT4 user data</li>
@@ -39,8 +31,9 @@
 <!--Section #-->
 <div id="features" class="articleSection" style="clear:both">
 <h4>Features</h4>
+ChartIQ's MT4 Middleware provides the ability to:
 <ul>
-<li>Request</li>
+<li><strong>Request</strong></li>
 <ul>
 <li>List of securities</li>
 <li>All user data (Margin, Balance, Name, Email, Group, etc)</li>
@@ -49,18 +42,18 @@
 <li>List of pending orders</li>
 <li>Chart data</li>
 </ul>
-<li>Subscribe to</li>
+<li><strong>Subscribe to</strong></li>
 <ul>
 <li>Symbol ticks</li>
 <li>Security group ticks</li>
 </ul>
-<li>Receive</li>
+<li><strong>Receive</strong></li>
 <ul>
 <li>Real time trade updates</li>
 <li>MT4 server configuration updates</li>
 <li>Markup update</li>
 </ul>
-<li>Supports</li>
+<li><strong>Supports</strong></li>
 <ul>
 <li>Re-quotes</li>
 <li>Request execution</li>
@@ -93,19 +86,28 @@
 
 <!--Section #-->
 <div id="installNodeJS" class="articleSection" style="clear:both">
-<h3>Installing NodeJS</h3>
-5.	Double-click the NodeJS Windows Installer Package to install NodeJS.  Click Next to continue.
- 
-6.	Check the I accept the terms in the License Agreement box then click Next to continue. 
+<h3>Installing Node.js</h3>
 
-7.	Select the directory that NodeJS will be installed on.  The default directory is sufficient unless special requirements dictate otherwise. Click Next to continue. 
- 
-8.	Click Next on the Custom Setup screen to continue with the installation.
- 
-9.	Select Install on the Ready to install Node.js screen. 
- 
-10.	Click Finish to complete the setup!
+<img class="custom" src="images/mw/mw-injs-1.png" width=780px; height=542px; style="margin-bottom: 1%"> 
+<p>1. <strong>Download</strong> the Current version (latest features) of <strong>Node.js</strong> by visiting <a href="https://nodejs.org/en/" target="_new">https://nodejs.org/en/</a>.</p>
 
+<img class="custom" src="images/mw/mw-injs-3.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>2. <strong>Double-click</strong> the <strong>Node.js</strong> Windows Installer Package to install <strong>Node.js</strong>.  <strong>Click</strong> <em>Next</em> to continue.</p>
+ 
+ <img class="custom" src="images/mw/mw-injs-4.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>3. <strong>Check</strong> the <em>I accept the terms in the License Agreement</em> box. <strong>Click</strong> <em>Next</em> to continue.</p> 
+
+<img class="custom" src="images/mw/mw-injs-5.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>4. <strong>Select</strong> the directory that <strong>Node.js</strong> will be installed on.  The default directory is sufficient unless special requirements dictate otherwise. <strong>Click</strong> <em>Next</em> to continue.</p> 
+ 
+<img class="custom" src="images/mw/mw-injs-6.png" width=475px; height=371px; style="margin-bottom: 1%">  
+<p>5. <strong>Click</strong> <em>Next</em> on the "Custom Setup" screen to continue with the installation.</p>
+ 
+<img class="custom" src="images/mw/mw-injs-7.png" width=475px; height=371px; style="margin-bottom: 1%">  
+<p>6. <strong>Select</strong> <em>Install</em> on the "Ready to install Node.js" screen.</p> 
+
+<img class="custom" src="images/mw/mw-injs-8.png" width=475px; height=371px; style="margin-bottom: 1%">  
+<p>7. <strong>Click</strong> <em>Finish</em> to complete the setup!</p>
 </div>
 
 <!--Section #-->
@@ -116,6 +118,13 @@
 <!--Section #-->
 <div id="telnet" class="articleSection" style="clear:both">
 <h3>Enabling Telnet Server</h3>
+<img class="custom" src="images/mw/mw-tnet-1.png" width=875px; height=436px; style="margin-bottom: 1%"> 
+<p>1. <strong>Click</strong> <em>Start</em> > <em>Control Panel</em>. <strong>Select</strong> <em>Programs and Features</em>.</p>
+<p>2. <strong>Click</strong> <em>Turn Windows features on or off</em>.</p>
+<img class="custom" src="images/mw/mw-tnet-2.png" width=720px; height=511px; style="margin-bottom: 1%"> 
+<p>3. In the <em>Windows Features</em> dialog box, <strong>check</strong> the <em>Telnet Client</em> check box.</p>
+<p>4. <strong>Click</strong> OK. The system will install the appropriate files. This will take a few seconds to a minute.</p> 
+
 </div>
 
 <!--Section #-->
@@ -138,9 +147,9 @@
 <h3>Sample Downloads</h3>
 </div>
 
-1.	Create a folder on the server’s main hard drive named ChartIQ.
+
   
-2.	Download the Current version (latest features) of NodeJS by visiting https://nodejs.org/en/.
+
  
 3.	Place the files downloaded for NodeJS into the ChartIQ folder. 
  
