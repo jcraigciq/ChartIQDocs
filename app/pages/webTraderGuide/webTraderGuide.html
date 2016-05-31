@@ -93,10 +93,10 @@ This modular design allows developers to take individual pieces of <strong>WebTr
 <p>The <strong>Market Watch</strong> component displays real time quotes for all <em>Symbols</em> that the user has access to trade.  This component also includes features to start a <strong>New Order</strong>/<strong>New Pending Order</strong> dialog or plot the <em>Symbol</em> in the <strong>ChartDock</strong>.<p>
 
 <img class="custom" src="images/wtg/wtg-11.png" width=277px; height=163px; style="margin-bottom: 1%">
-<p>The trading portion of this component has two different behaviors depending on if the user has <strong>One-Click Trading</strong> enabled or not.  If <strong>One-Click Trading</strong> is enabled then the user is able to input the <em>Volume</em>, <em>SL PIPS</em>, <em>TP PIPS</em> and then click <em>Buy</em>/<em>Sell</em> to instantly trigger the transaction.  If <strong>One-Click Trading</strong> is disabled, then clicking <em>Buy</em>/<em>Sell</em> will trigger the <strong>New Order</strong>/<strong>New Pending Order</strong> dialog.</p> 
+<p>The trading portion of this component has two different behaviors depending on if the user has <strong>One-Click Trading</strong> enabled or not.  If <strong>One-Click Trading</strong> is enabled then the user is able to input the <em>Volume</em>, <em>SL PIPS</em>, <em>TP PIPS</em> and then click <em>Buy</em>/<em>Sell</em> to instantly execute the transaction.  If <strong>One-Click Trading</strong> is disabled, then clicking <em>Buy</em>/<em>Sell</em> will open the <strong>New Order</strong>/<strong>New Pending Order</strong> dialog.</p> 
 
 <img class="custom" src="images/wtg/wtg-12.png" width=299px; height=177px; style="margin-bottom: 1%">
-<p>The user can also trigger the <strong>New Order</strong>/<strong>New Pending Order</strong> dialog by pressing the <img class="custom" src="images/wtg/wtg-119.png" width=33px; height=31px;>  icon in the top right-hand corner of the expanded <em>Symbol</em> dialog.</p>   	 
+<p>The user can also open the <strong>New Order</strong>/<strong>New Pending Order</strong> dialog by pressing the <img class="custom" src="images/wtg/wtg-119.png" width=33px; height=31px;>  icon in the top right-hand corner of the expanded <em>Symbol</em> dialog.</p>   	 
 <img class="custom" src="images/wtg/wtg-13.png" width=278px; height=167px; style="margin-bottom: 1%">
 
 <p>The <img class="custom" src="images/wtg/wtg-118.png" width=29px; height=25px; style="margin-bottom: 1%"> icon enables you to plot the <em>Symbol</em> on the <strong>ChartDock</strong>.  After clicking the <img class="custom" src="images/wtg/wtg-118.png" width=29px; height=25px; style="margin-bottom: 1%"> icon, a context menu will appear that prompts you for the <em>chart interval</em> to apply to the x-axis of the chart.</p>	 
@@ -321,7 +321,7 @@ The <strong>Chart Tools</strong> component is an icon based menu that allows use
 <div id="newOrder" class="articleSection" style="clear:both">
 <h4>New Order</h4>
 <img class="custom" src="images/wtg/wtg-59.png" width=600px; height=405px; style="margin-bottom: 1%"> 
-<p>The <strong>New Order</strong> dialog enables the user to place a <strong>New Order</strong>.  The user can choose to click <strong>New Pending</strong> to trigger the <strong>New Pending Order</strong> dialog.  
+<p>The <strong>New Order</strong> dialog enables the user to place a <strong>New Order</strong>.  The user can choose to click <strong>New Pending</strong> to open the <strong>New Pending Order</strong> dialog.  
 <ul>
 <li><img class="custom" src="images/wtg/wtg-60.png" width=188px; height=36px; style="margin-bottom: 1%"> - Enables the user to toggle between <strong>New Order</strong> and <strong>New Pending Order</strong>.</li>
 <li><img class="custom" src="images/wtg/wtg-61.png" width=286px; height=51px; style="margin-bottom: 1%"> - Dropdown selector for picking the <em>Symbol</em>.</li>
@@ -342,9 +342,9 @@ The <strong>Chart Tools</strong> component is an icon based menu that allows use
 <div id="newPendingOrder" class="articleSection" style="clear:both">
 <h4>New Pending Order</h4>
 <img class="custom" src="images/wtg/wtg-72.png" width=601px; height=514px; style="margin-bottom: 1%"> 
-<p>A dialog that enables the user to place a <strong>New Pending Order</strong>.  The user can choose to click <strong>New Order</strong> to trigger the <strong>New Order</strong> dialog.</p>  
+<p>A dialog that enables the user to place a <strong>New Pending Order</strong>.  The user can choose to click <strong>New Order</strong> to open the <strong>New Order</strong> dialog.</p>  
 <ul>
-<li><img class="custom" src="images/wtg/wtg-73.png" width=186px; height=38px; style="margin-bottom: 1%"> - Enables the user to toggle between <strong>New Order</strong> and <strong>New Pending Order</strong>.</li>
+<li><img class="custom" src="images/wtg/wtg-73.png" width=186px; height=38px; style="margin-bottom: 1%"> - Enables the user to toggle between the <strong>New Order</strong> and <strong>New Pending Order</strong> dialogs.</li>
 <li><img class="custom" src="images/wtg/wtg-74.png" width=286px; height=51px; style="margin-bottom: 1%"> - Dropdown selector for picking the <em>Symbol</em>.</li>
 <li><img class="custom" src="images/wtg/wtg-75.png" width=131px; height=47px; style="margin-bottom: 1%"> - Input for the <em>Volume</em> of a trade.</li>
 <li><img class="custom" src="images/wtg/wtg-76.png" width=130px; height=45px; style="margin-bottom: 1%"> - Drop down menu for choosing the <em>Type</em> of transaction, these include:</li>
@@ -373,27 +373,27 @@ The <strong>Chart Tools</strong> component is an icon based menu that allows use
 <div id="modPendingOrder" class="articleSection" style="clear:both">
 <h4>Modify Pending Order</h4>
 <img class="custom" src="images/wtg/wtg-86.png" width=597px; height=453px; style="margin-bottom: 1%"> 
-<p>A dialog menu for enabling the user to modify a pending order.</p>
+<p>A dialog for enabling the user to <strong>Modify a Pending Order</strong>.</p>
 <ul>
-<li><img class="custom" src="images/wtg/wtg-87.png" width=186px; height=38px; style="margin-bottom: 1%"> - Enables the user to toggle between New Order and New Pending Order.</li>
-<li><img class="custom" src="images/wtg/wtg-88.png" width=290px; height=53px; style="margin-bottom: 1%">- Drop down menu for the user to select which Pending Order they wish to modify.</li>
-<li><img class="custom" src="images/wtg/wtg-89.png" width=194px; height=53px; style="margin-bottom: 1%"> - Drop down menu for choosing the Type of transaction, these include:</li>
+<li><img class="custom" src="images/wtg/wtg-87.png" width=186px; height=38px; style="margin-bottom: 1%"> - Enables the user to toggle between <strong>New Order</strong> and <strong>New Pending Order</strong> dialogs.</li>
+<li><img class="custom" src="images/wtg/wtg-88.png" width=290px; height=53px; style="margin-bottom: 1%">- Drop down menu for the user to select which <em>Pending Order</em> they wish to modify.</li>
+<li><img class="custom" src="images/wtg/wtg-89.png" width=194px; height=53px; style="margin-bottom: 1%"> - Drop down menu for choosing the <em>Type</em> of transaction, these include:</li>
 <ul>
 <li><em>Buy Limit</em></li>
 <li><em>Sell Limit</em></li>
 <li><em>Buy Stop</em></li>
 <li><em>Sell Stop</em></li>
 </ul>
-<li><img class="custom" src="images/wtg/wtg-90.png" width=285px; height=55px; style="margin-bottom: 1%"> - Input for user to set the Price condition.</li>
-<li><img class="custom" src="images/wtg/wtg-91.png" width=181px; height=30px; style="margin-bottom: 1%"> - Input for setting the Stop Loss value.</li>
-<li><img class="custom" src="images/wtg/wtg-92.png" width=131px; height=65px; style="margin-bottom: 1%"> - Shows current loss based on the Stop Loss value.</li>
-<li><img class="custom" src="images/wtg/wtg-93.png" width=182px; height=30px; style="margin-bottom: 1%"> - Input for setting the Take Profit value.</li>
-<li><img class="custom" src="images/wtg/wtg-94.png" width=132px; height=65px; style="margin-bottom: 1%"> - Shows current profit based on the Take Profit value.</li>
-<li><img class="custom" src="images/wtg/wtg-95.png" width=286px; height=49px; style="margin-bottom: 1%"> - Input for user to set the date and time that the New Pending Order will expire on.</li>  
+<li><img class="custom" src="images/wtg/wtg-90.png" width=285px; height=55px; style="margin-bottom: 1%"> - Input for user to set the <em>Price</em> condition.</li>
+<li><img class="custom" src="images/wtg/wtg-91.png" width=181px; height=30px; style="margin-bottom: 1%"> - Input for setting the <em>Stop Loss</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-92.png" width=131px; height=65px; style="margin-bottom: 1%"> - Shows current loss based on the <em>Stop Loss</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-93.png" width=182px; height=30px; style="margin-bottom: 1%"> - Input for setting the <em>Take Profit</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-94.png" width=132px; height=65px; style="margin-bottom: 1%"> - Shows current profit based on the <em>Take Profit</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-95.png" width=286px; height=49px; style="margin-bottom: 1%"> - Input for user to set the <em>date</em> and <em>time</em> that the <strong>New Pending Order</strong> will expire on.</li>  
 <li><img class="custom" src="images/wtg/wtg-96.png" width=395px; height=58px; style="margin-bottom: 1%"> - <em>Comment</em> for the trade (logged in the <strong>MT4</strong> server).</li>
-<li><img class="custom" src="images/wtg/wtg-97.png" width=250px; height=374px; style="margin-bottom: 1%"> - Displays the Bid and Ask for the <em>Symbol</em> selected.</li>
-<li><img class="custom" src="images/wtg/wtg-98.png" width=179px; height=43px; style="margin-bottom: 1%"> - Updates the Pending Order with the latest inputs from the user.</li>
-<li><img class="custom" src="images/wtg/wtg-99.png" width=178px; height=40px; style="margin-bottom: 1%"> - Deletes the Pending Order completely.</li>
+<li><img class="custom" src="images/wtg/wtg-97.png" width=250px; height=374px; style="margin-bottom: 1%"> - Displays the <em>Bid</em> and <em>Ask</em> for the <em>Symbol</em> selected.</li>
+<li><img class="custom" src="images/wtg/wtg-98.png" width=179px; height=43px; style="margin-bottom: 1%"> - <em>Updates</em> the <em>Pending Order</em> with the latest inputs from the user.</li>
+<li><img class="custom" src="images/wtg/wtg-99.png" width=178px; height=40px; style="margin-bottom: 1%"> - <em>Deletes</em> the <em>Pending Order</em> completely.</li>
 </ul> 
 
 
@@ -405,16 +405,16 @@ The <strong>Chart Tools</strong> component is an icon based menu that allows use
 <div id="modPosition" class="articleSection" style="clear:both">
 <h4>Modify Position</h4> 
 <img class="custom" src="images/wtg/wtg-100.png" width=600px; height=292px; style="margin-bottom: 1%">
-<p>A dialog menu for enabling the user to update or close an open position.</p>
-<li><img class="custom" src="images/wtg/wtg-101.png" width=185px; height=36px; style="margin-bottom: 1%"> - Enables the user to switch to a New Order or New Pending Order.</li>
-<li><img class="custom" src="images/wtg/wtg-102.png" width=283px; height=47px; style="margin-bottom: 1%"> - Drop down menu for the user to select which Position they wish to modify.</li>
-<li><img class="custom" src="images/wtg/wtg-103.png" width=181px; height=30px; style="margin-bottom: 1%"> - Input for setting the Stop Loss value.</li>
-<li><img class="custom" src="images/wtg/wtg-104.png" width=131px; height=65px; style="margin-bottom: 1%"> - Shows current loss based on the Stop Loss value.</li>
-<li><img class="custom" src="images/wtg/wtg-105.png" width=182px; height=30px; style="margin-bottom: 1%"> - Input for setting the Take Profit value.</li>
-<li><img class="custom" src="images/wtg/wtg-106.png" width=132px; height=65px; style="margin-bottom: 1%"> - Shows current profit based on the Take Profit value.</li>
-<li><img class="custom" src="images/wtg/wtg-107.png" width=250px; height=374px; style="margin-bottom: 1%"> - Displays the Bid and Ask for the <em>Symbol</em> selected.</li>
-<li><img class="custom" src="images/wtg/wtg-108.png" width=179px; height=43px; style="margin-bottom: 1%"> - Update the position with the latest inputs from the user.</li>
-<li><img class="custom" src="images/wtg/wtg-109.png" width=178px; height=40px; style="margin-bottom: 1%"> - Close the open position.</li>
+<p>A dialog menu for enabling the user to <em>update</em> or <em>close</em> an <em>open position</em>.</p>
+<li><img class="custom" src="images/wtg/wtg-101.png" width=185px; height=36px; style="margin-bottom: 1%"> - Enables the user to switch to a <strong>New Order</strong> or <strong>New Pending Order</strong> dialog.</li>
+<li><img class="custom" src="images/wtg/wtg-102.png" width=283px; height=47px; style="margin-bottom: 1%"> - Drop down menu for the user to select which <em>Position</em> they wish to modify.</li>
+<li><img class="custom" src="images/wtg/wtg-103.png" width=181px; height=30px; style="margin-bottom: 1%"> - Input for setting the <em>Stop Loss</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-104.png" width=131px; height=65px; style="margin-bottom: 1%"> - Shows current loss based on the <em>Stop Loss</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-105.png" width=182px; height=30px; style="margin-bottom: 1%"> - Input for setting the <em>Take Profit</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-106.png" width=132px; height=65px; style="margin-bottom: 1%"> - Shows current profit based on the <em>Take Profit</em> value.</li>
+<li><img class="custom" src="images/wtg/wtg-107.png" width=250px; height=374px; style="margin-bottom: 1%"> - Displays the <em>Bid</em> and <em>Ask</em> for the <em>Symbol</em> selected.</li>
+<li><img class="custom" src="images/wtg/wtg-108.png" width=179px; height=43px; style="margin-bottom: 1%"> - <em>Update</em> the position with the latest inputs from the user.</li>
+<li><img class="custom" src="images/wtg/wtg-109.png" width=178px; height=40px; style="margin-bottom: 1%"> - <em>Close</em> the open position.</li>
 </ul>
 </div>
 
@@ -422,7 +422,7 @@ The <strong>Chart Tools</strong> component is an icon based menu that allows use
 <div id="chartStudies" class="articleSection" style="clear:both">
 <h4>Chart Studies</h4>
 <img class="custom" src="images/wtg/wtg-114.png" width=474px; height=407px; style="margin-bottom: 1%"> 
-<p>The Chart Studies dialog enables users to select an indicator to bring up additional settings and plot it in the <strong>ChartDock</strong>.</p>
+<p>The <strong>Chart Studies</strong> dialog enables users to select an indicator to bring up additional settings and plot it in the <strong>ChartDock</strong>.</p>
 </div>
 
 <!--Section 3.7-->
@@ -434,11 +434,11 @@ The <strong>One-Click Trading</strong> dialog allows the user to enable the func
 <ol>
 <li><img class="custom" src="images/wtg/wtg-116.png"  width=297px; height=177px; style="margin-bottom: 1%"></li>
 <ul>
-<li>As an option in the Settings dialog.</li>
+<li>As an option in the <strong>Settings</strong> dialog.</li>
 </ul>
 <li><img class="custom" src="images/wtg/wtg-117.png" width=316px; height=42px; style="margin-bottom: 1%" ></li>
 <ul>
-<li>With the toggle button in the top-right hand corner of the application.</li>
+<li>With the toggle button in the top-right hand corner of the <strong>WebTrader</strong> application.</li>
 </ul>
 </ol>
 </div>
