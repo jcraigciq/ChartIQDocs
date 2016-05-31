@@ -1,50 +1,142 @@
 <div class="article">
 	<h1>Middleware Installation</h1>
+<ul>
+<li>installing Node.js</li>
+<li>installing ChartIQ Windows Services</li>
+<li>enabling Telnet server</li>
+<li>configuring ChartIQ Node.js</li>
+<li>installing nginx</li>
+<li>configuring nginx</li>
+<li>sample downloads</li>
+</ul>
 
+
+<!--Section #-->
+<div id="introduction" class="articleSection" style="clear:both">
+<h3>Chart IQ's MT4 Middleware</h3>
+<p>Our Middleware is written in NodeJS/Socket.io and it provides a web socket API. NginX is used as a reverse proxy and load balancer. Our Middleware enables the following features:</p>
+<ul>
+<li>Authenticate MT4 users</li>
+<li>Retrieve MT4 user data</li>
+<li>Subscribe to real time quotes</li>
+<li>Trading</li>
+<li>Ability to Open/Modify/Close positions and orders</li>
+<li>Additional updates from MT4</li>
+</ul>
+</div>
+
+<!--Section #-->
+<div id="advantages" class="articleSection" style="clear:both">
+<h4>Advantages of using our Middleware</h4>
+<ul>
+<li>Use any programming language to interface with it</li>
+<li>Scalable and uses NginX as a load balancer</li>
+<li>Takes the load off your MT4 server(s)</li>
+<li>Combines MT4 server API and MT4 Manager API</li>
+</ul>
+</div>
+
+<!--Section #-->
+<div id="features" class="articleSection" style="clear:both">
+<h4>Features</h4>
+<ul>
+<li>Request</li>
+<ul>
+<li>List of securities</li>
+<li>All user data (Margin, Balance, Name, Email, Group, etc)</li>
+<li>Closed positions and transactions (supports from, to dates)</li>
+<li>List of open positions</li>
+<li>List of pending orders</li>
+<li>Chart data</li>
+</ul>
+<li>Subscribe to</li>
+<ul>
+<li>Symbol ticks</li>
+<li>Security group ticks</li>
+</ul>
+<li>Receive</li>
+<ul>
+<li>Real time trade updates</li>
+<li>MT4 server configuration updates</li>
+<li>Markup update</li>
+</ul>
+<li>Supports</li>
+<ul>
+<li>Re-quotes</li>
+<li>Request execution</li>
+<li>Open/Modify/Close positions</li>
+<li>Add/Edit/Delete pending orders</li>
+<li>Login/Logout </li>
+</ul>
+</ul>
+</div>
+
+<!--Section #-->
+<div id="hardware" class="articleSection" style="clear:both">
+<h4>Hardware Requirements</h4>
+<ul>
+<li>Windows Virtual Machine/Dedicated Server (Win Server 2012)</li>
+<li>5 CPU cores or more</li>
+<li>5 GB RAM</li>
+<li>20 GB disk space</li>
+</ul>
+</div>
+
+<!--Section #-->
+<div id="additional" class="articleSection" style="clear:both">
+<h4>Additional Requirements</h4>
+<ul>
+<li>Installation of ChartIQ MT4 plugin on your MT4 server(s)</li>
+<li>Manager account for each MT4 server (dealer rights)</li>
+</ul>
+</div>     
+
+<!--Section #-->
+<div id="installNodeJS" class="articleSection" style="clear:both">
+<h3>Installing NodeJS</h3>
+5.	Double-click the NodeJS Windows Installer Package to install NodeJS.  Click Next to continue.
  
+6.	Check the I accept the terms in the License Agreement box then click Next to continue. 
+
+7.	Select the directory that NodeJS will be installed on.  The default directory is sufficient unless special requirements dictate otherwise. Click Next to continue. 
  
+8.	Click Next on the Custom Setup screen to continue with the installation.
+ 
+9.	Select Install on the Ready to install Node.js screen. 
+ 
+10.	Click Finish to complete the setup!
 
+</div>
 
+<!--Section #-->
+<div id="installChartIQWS" class="articleSection" style="clear:both">
+<h3>Installing ChartIQ Windows Services</h3>
+</div>
 
+<!--Section #-->
+<div id="telnet" class="articleSection" style="clear:both">
+<h3>Enabling Telnet Server</h3>
+</div>
 
+<!--Section #-->
+<div id="configNodeJS" class="articleSection" style="clear:both">
+<h3>Configuring ChartIQ NodeJS</h3>
+</div>
 
+<!--Section #-->
+<div id="installNginX" class="articleSection" style="clear:both">
+<h3>Installing NginX</h3>
+</div>
 
+<!--Section #-->
+<div id="configNginX" class="articleSection" style="clear:both">
+<h3>Configuring NginX</h3>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--Section #-->
+<div id="sampleDownloads" class="articleSection" style="clear:both">
+<h3>Sample Downloads</h3>
+</div>
 
 1.	Create a folder on the server’s main hard drive named ChartIQ.
   
@@ -55,22 +147,13 @@
 
 4.	Place the ChartService.zip and QuotesService.zip files into the ChartIQ folder.
  
-5.	Double-click the NodeJS Windows Installer Package to install NodeJS.  Click Next to continue.
- 
-6.	Check the I accept the terms in the License Agreement box then click Next to continue. 
+
  
 
 
 
 
 
-7.	Select the directory that NodeJS will be installed on.  The default directory is sufficient unless special requirements dictate otherwise. Click Next to continue. 
- 
-8.	Click Next on the Custom Setup screen to continue with the installation.
- 
-9.	Select Install on the Ready to install Node.js screen. 
- 
-10.	Click Finish to complete the setup!
  
 
 
@@ -241,12 +324,6 @@ e.	Make Sure Upstream Matches engine configuration
 a.	Specify the location of the app besides ‘root’.
 b.	Make sure Upstream matches engine configuration
 21.	Navigate to C:\ChartIQ\nginx-1.8.1 and double click ‘nginx.exe’
-
-
-
-
-
-
 
 
 
