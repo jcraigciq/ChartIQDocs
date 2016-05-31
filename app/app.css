@@ -19,7 +19,7 @@ margin-top: 1%;
 
 .container-nav li {
    display: inline;
-   padding: 1% 0% 5% 2%;
+   padding: 1% 0% 0% 2%;
 }
 
 .container-nav img {
@@ -32,6 +32,23 @@ margin-top: 1%;
     padding-right:20px;
 }
 
+.container-subnav {
+    position: fixed;
+
+}
+
+.container-subnav a {
+    font-size: 14px;
+}
+
+.container-subnav ul {
+
+}
+
+.container-subnav li {
+    font-weight: bold;
+}
+
 .article {
     margin: 4% 5% 5% 15%;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -39,7 +56,6 @@ margin-top: 1%;
 }
 .article h1{
   border-bottom: 1px solid ;
-
 }
 
 .article h3{
@@ -67,22 +83,6 @@ margin-top: 1%;
     width: 60%;
     height: 100%;
     box-shadow:0;
-}
-
-.container-subnav {
-    margin-top: 1%;
-    position: fixed;
-}
-
-.container-subnav a {
-    font-size: 13px;
-}
-
-.container-subnav ul {
-margin-top: -5%;
-}
-
-.container-subnav li {
 }
 
 .MobileSSFloatTop {
