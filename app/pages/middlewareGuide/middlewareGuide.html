@@ -6,7 +6,7 @@
 <!--Section #-->
 <div id="introduction" class="articleSection" style="clear:both">
 <h3>ChartIQ's MT4 Middleware</h3>
-<p>ChartIQ's Middleware is written in NodeJS/Socket.io and it provides a web socket API. NginX is used as a reverse proxy and load balancer. Our Middleware enables the following features:</p>
+<p><strong>ChartIQ's Middleware</strong> is written in <strong>Node.js</strong>/<strong>Socket.io</strong> and it provides a web socket API. NginX is used as a reverse proxy and load balancer. <strong>ChartIQ's Middleware</strong> enables the following features:</p>
 <ul>
 <li>Authenticate MT4 users</li>
 <li>Retrieve MT4 user data</li>
@@ -19,7 +19,7 @@
 
 <!--Section #-->
 <div id="advantages" class="articleSection" style="clear:both">
-<h4>Advantages of using our Middleware</h4>
+<h4>Advantages</h4>
 <ul>
 <li>Use any programming language to interface with it</li>
 <li>Scalable and uses NginX as a load balancer</li>
@@ -31,7 +31,7 @@
 <!--Section #-->
 <div id="features" class="articleSection" style="clear:both">
 <h4>Features</h4>
-ChartIQ's MT4 Middleware provides the ability to:
+<strong>ChartIQ's Middleware</strong> provides the ability to:
 <ul>
 <li><strong>Request</strong></li>
 <ul>
@@ -88,7 +88,7 @@ ChartIQ's MT4 Middleware provides the ability to:
 <div id="installNodeJS" class="articleSection" style="clear:both">
 <h3>Installing Node.js</h3>
 
-<img class="custom" src="images/mw/mw-injs-1.png" width=780px; height=542px; style="margin-bottom: 1%"> 
+<img class="custom" src="images/mw/mw-injs-1.png" width=650px; height=452px; style="margin-bottom: 1%"> 
 <p>1. <strong>Download</strong> the Current version (latest features) of <strong>Node.js</strong> by visiting <a href="https://nodejs.org/en/" target="_new">https://nodejs.org/en/</a>.</p>
 
 <img class="custom" src="images/mw/mw-injs-3.png" width=475px; height=371px; style="margin-bottom: 1%"> 
@@ -116,14 +116,106 @@ ChartIQ's MT4 Middleware provides the ability to:
 </div>
 
 <!--Section #-->
+<div id="chartService" class="articleSection" style="clear:both">
+<h4>Chart Service</h4>
+<p>1. Download the <strong>ChartIQ Chart Service</strong> <a href="" target="_new">here</a>.</p>
+<img class="custom" src="images/mw/mw-cservice-1.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>2. <strong>Open</strong> the <em>config.ini</em> file.</p>
+<img class="custom" src="images/mw/mw-cservice-2.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>3. Changes need to be made to <em>config.ini</em> file so that it can work with your environment.  The first change is the <strong>Filename</strong> parameter under the <strong>[Logger]</strong> section.</p>
+
+<strong>Filename</strong>
+<br>
+<strong>Before:</strong> Filename=<strike>C:\work\c++\itrader\bin\</strike>charts-%datetime{%Y-%M-%d}.log
+<br>
+<strong>After:</strong>  Filename=C:\ChartIQ\logs\charts\charts-%datetime{%Y-%M-%d}.log
+<br>
+<strong>*Note:</strong> The path you change the <strong>Filename</strong> parameter to may slightly differ from the path above depending on the location of your <strong>ChartIQ</strong> folder. 
+<br>
+<br>
+<p>4.	 The following parameters in the <strong>[Feeder]</strong> section need to be changed based on your MT4 and environment information: <strong>Manager</strong>, <strong>Password</strong>, <strong>Address</strong>, <strong>Port</strong>, and <strong>Environment</strong>.</p>
+<ul>
+<li><strong>Manager</strong> – MT4 Manager Account login</li>
+<li><strong>Password</strong> – MT4 Manager Account password</li>
+<li><strong>Address</strong> – IP of MT4 Server</li>
+<li><strong>Port</strong> – Port that the service will listen on</li>
+<li><strong>Environment</strong> – Name of the service that you are installing</li>
+</ul>
+<img class="custom" src="images/mw/mw-cservice-3.png" width=511px; height=336px; style="margin-bottom: 1%"> 
+<p>5. <strong>Open</strong> <em>Command Prompt</em> and <strong>navigate</strong> to the <em>ChartIQ\ChartService</em> directory.</p>
+<p>6.	Input the following command:</p>
+<blockquote>
+  <p>icharts-static.exe -console (environment name)</p>
+  <footer><strong>*Note:</strong> Use the <strong>Environment Name</strong> used in the configuration files above.</footer>
+</blockquote>
+<img class="custom" src="images/mw/mw-cservice-4.png" width=511px; height=336px; style="margin-bottom: 1%">
+<p>7. If your <em>Command Prompt</em> looks like the screen shot above, you have succesfully configured the <strong>Chart Service</strong>. If not, please check the <em>config.ini</em> file to ensure it has been configured properly. You can also check the logs for information by navigating to <em>ChartIQ\ChartService\logs</em>. If successful, exit out of the <em>Command Prompt</em>.  
+<p>8. <strong>Open</strong> <em>Command Prompt</em> and <strong>navigate</strong> to the <em>ChartIQ\ChartService</em> directory.</p>
+<p>.	Input the following command:</p>
+<blockquote>
+  <p>icharts-static.exe -install (environment name)</p>
+  <footer><strong>*Note:</strong> Use the <strong>Environment Name</strong> used in the configuration files above.</footer>
+</blockquote>
+<img class="custom" src="images/mw/mw-cservice-5.png" width=511px; height=336px; style="margin-bottom: 1%">
+<p>9. If your screen looks like the screenshot above, you have successfully installed the <strong>Chart Service</strong>.</p>
+<p>10. Exit the <em>Command Prompt</em>.
+</div>
+
+<!--Section #-->
+<div id="quoteService" class="articleSection" style="clear:both">
+<h4>Quote Service</h4>
+<p>1. Download the <strong>ChartIQ Quote Service</strong> <a href="" target="_new">here</a>.</p>
+<img class="custom" src="images/mw/mw-qservice-1.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>2. <strong>Open</strong> the <em>config.ini</em> file.</p>
+<img class="custom" src="images/mw/mw-qservice-2.png" width=475px; height=371px; style="margin-bottom: 1%"> 
+<p>3. Changes need to be made to <em>config.ini</em> file so that it can work with your environment.  The first change is the <strong>Filename</strong> parameter under the <strong>[Logger]</strong> section.</p>
+
+<strong>Filename</strong>
+<br>
+<strong>Before:</strong> Filename=<strike>C:\work\c++\ifeeder\bin\</strike>feeder-%datetime{%Y-%M-%d}.log
+<br>
+<strong>After:</strong>  Filename=C:\ChartIQ\logs\feeder\feeder-%datetime{%Y-%M-%d}.log
+<br>
+<strong>*Note:</strong> The path you change the <strong>Filename</strong> parameter to may slightly differ from the path above depending on the location of your <strong>ChartIQ</strong> folder. 
+<br>
+<br>
+<p>4.	 The following parameters in the <strong>[Feeder]</strong> section need to be changed based on your MT4 and environment information: <strong>Manager</strong>, <strong>Password</strong>, <strong>Address</strong>, <strong>Port</strong>, and <strong>Environment</strong>.</p>
+<ul>
+<li><strong>Manager</strong> – MT4 Manager Account login</li>
+<li><strong>Password</strong> – MT4 Manager Account password</li>
+<li><strong>Address</strong> – IP of MT4 Server</li>
+<li><strong>Port</strong> – Port that the service will listen on</li>
+<li><strong>Environment</strong> – Name of the service that you are installing</li>
+</ul>
+<img class="custom" src="images/mw/mw-qservice-3.png" width=511px; height=336px; style="margin-bottom: 1%"> 
+<p>5. <strong>Open</strong> <em>Command Prompt</em> and <strong>navigate</strong> to the <em>ChartIQ\QuoteService</em> directory.</p>
+<p>6.	Input the following command:</p>
+<blockquote>
+  <p>ifeeder-static.exe -console (environment name)</p>
+  <footer><strong>*Note:</strong> Use the <strong>Environment Name</strong> used in the configuration files above.</footer>
+</blockquote>
+<img class="custom" src="images/mw/mw-qservice-4.png" width=511px; height=336px; style="margin-bottom: 1%">
+<p>7. If your <em>Command Prompt</em> looks like the screen shot above, you have succesfully configured the <strong>Quote Service</strong>. If not, please check the <em>config.ini</em> file to ensure it has been configured properly. You can also check the logs for information by navigating to <em>ChartIQ\QuoteService\logs</em>. If successful, exit out of the <em>Command Prompt</em>.  
+<p>8. <strong>Open</strong> <em>Command Prompt</em> and <strong>navigate</strong> to the <em>ChartIQ\QuoteService</em> directory.</p>
+<p>.	Input the following command:</p>
+<blockquote>
+  <p>ifeeder-static.exe -install (environment name)</p>
+  <footer><strong>*Note:</strong> Use the <strong>Environment Name</strong> used in the configuration files above.</footer>
+</blockquote>
+<img class="custom" src="images/mw/mw-qservice-5.png" width=511px; height=336px; style="margin-bottom: 1%">
+<p>9. If your screen looks like the screenshot above, you have successfully installed the <strong>Quote Service</strong>.</p>
+<p>10. Exit the <em>Command Prompt</em>.
+</div>
+
+<!--Section #-->
 <div id="telnet" class="articleSection" style="clear:both">
 <h3>Enabling Telnet Client</h3>
 <img class="custom" src="images/mw/mw-tnet-1.png" width=875px; height=436px; style="margin-bottom: 1%"> 
 <p>1. <strong>Click</strong> <em>Start</em> > <em>Control Panel</em>. <strong>Select</strong> <em>Programs and Features</em>.</p>
 <p>2. <strong>Click</strong> <em>Turn Windows features on or off</em>.</p>
-<img class="custom" src="images/mw/mw-tnet-2.png" width=720px; height=511px; style="margin-bottom: 1%"> 
+<img class="custom" src="images/mw/mw-tnet-2.png" width=545px; height=473px; style="margin-bottom: 1%"> 
 <p>3. In the <em>Windows Features</em> dialog box, <strong>check</strong> the <em>Telnet Client</em> check box.</p>
-<p>4. <strong>Click</strong> OK. The system will install the appropriate files. This will take a few seconds to a minute.</p> 
+<p>4. <strong>Click</strong> <em>OK</em>. The system will install the appropriate files. This will take a few seconds to a minute.</p> 
 </div>
 
 <!--Section #-->
@@ -145,194 +237,4 @@ ChartIQ's MT4 Middleware provides the ability to:
 <div id="sampleDownloads" class="articleSection" style="clear:both">
 <h3>Sample Downloads</h3>
 </div>
-
-
-  
-
- 
-3.	Place the files downloaded for NodeJS into the ChartIQ folder. 
- 
-
-4.	Place the ChartService.zip and QuotesService.zip files into the ChartIQ folder.
- 
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-11.	Right-click ChartService.zip and select the Extract All… option.
-  
-12.	Click Extract on the next screen.
- 
-
-
-13.	The extracted files will now be displayed on the screen. Double-click ChartService-master to open the folder.
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-14.	Right-click the bin folder and click copy. 
- 
-15.	Navigate back to the ChartIQ folder.  Right-click and select Paste to copy the bin folder.
- 
-16.	Select both the ChartService files, right-click them, and select the Delete option. 
- 
-17.	Right-click the bin folder and select the Rename option.  Rename the folder to ChartService.  
- 
-18.	Right-click QuotesService.zip and select the Extract All… option.
-  
-19.	Click Extract on the next screen.
- 
-
-
-20.	The extracted files will now be displayed on the screen. Double-click QuotesService-master to open the folder.
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-21.	Right-click the bin folder and click copy. 
- 
-22.	Navigate back to the ChartIQ folder.  Right-click and select Paste to copy the bin folder.
- 
-23.	Select both the QuotesService files, right-click them, and select the Delete option. 
- 
-24.	Right-click the bin folder and select the Rename option.  Rename the folder to QuoteService.  
- 
-25.	The ChartIQ folder should now look like the following screenshot:
- 
-26.	Double-click the ChartService folder. Right-click the config file and select the option Open with Notepad.
-  
-27.	Changes need to be made to the config file so that it can work with your environment.  The first change is the Filename parameter under the [Logger] section.   
- 
-A.	Filename
-Before: Filename=C:\work\c++\itrader\bin\charts-%datetime{%Y-%M-%d}.log
-After:    Filename=C:\ChartIQ\logs\charts\charts-%datetime{%Y-%M-%d}.log
-*Note: The path you change the Filename parameter to may slightly differ based on the location of your ChartIQ folder. 
-
-28.	 The following parameters in the [Feeder] section need to be changed based on your MT4 and environment information: Manager, Password, Address, Port, and Environment.
-a.	Manager – MT4 Manager Account login
-b.	Password – MT4 Manager Account password
-c.	Address – IP of MT4 Server
-d.	Port – Port that the service will listen on
-e.	Environment – Name of the service that you are installing
-29.	Double-click the QuoteService folder. Right-click the config file and select the option Open with Notepad.
-  
-30.	Changes need to be made to the config file so that it can work with your environment.  The first change is the Filename parameter under the [Logger] section.   
- 
-B.	Filename
-Before: Filename=C:\work\c++\ifeeder\bin\feeder-%datetime{%Y-%M-%d}.log
-After:    Filename=C:\ChartIQ\logs\feeder\feeder-%datetime{%Y-%M-%d}.log
- *Note: The path you change the Filename parameter to may slightly differ based on the location of your ChartIQ folder. 
-
-31.	 The following parameters in the [Feeder] section need to be changed based on your MT4 and environment information: Manager, Password, Address, Port, and Environment.
-a.	Manager – MT4 Manager Account login
-b.	Password – MT4 Manager Account password
-c.	Address – IP of MT4 Server
-d.	Port – Port that the service will listen on (increment by 1 from Quote Service)
-e.	Environment – Name of the service that you are installing
-*Note: The [Feeder] section from the ChartService config file can be copied and used to replace the entire [Feeder] section of the QuoteService config file. 
-32. Open Command prompt and navigate to the ChartIQ\ChartService directory.
- 
- 
-32.	input the following command:
-a.	icharts-static.exe -console <environment name>
-i.	NOTE: Use the environment name used in the configuration files above.
-b.	 
-c.	This screen means we are good to go.
-d.	If you receive an error, please check your configuration files. 
-e.	Logs will automatically be generated.
-f.	Exit out of the CMD line after successful execution of ichart-static.exe
-g.	Open CMD line and input the following command: icharts-static.exe -install <environment name>
-h.	 
-i.	Success screen
-32. Open Command prompt and navigate to the ChartIQ\QuoteService directory.
- 
-1.	input the following command:
-a.	ifeeder-static.exe -console <environment name>
-i.	NOTE: Use the environment name used in the configuration files above.
-b.	 
-c.	This screen means we are good to go.
-d.	If you receive an error, please check your configuration files. 
-e.	Logs will automatically be generated.
-f.	Exit out of the CMD line after successful execution of ifeeder-static.exe
-g.	Open CMD line and input the following command: ifeeder-static.exe -install <environment name>
-h.	 
-i.	Success screen 
-2.	 Now we are going to start the services. In the CMD prompt type in ‘services.msc’
-3.	 
-4.	 
-5.	Now it’s time to test the services.
-6.	Make sure to have Telnet enabled on your Windows Machine. 
-To enable Telnet command line utilities:
-7.	Click Start > Control Panel.
-8.	Click Programs and Features.
- 
-9.	Click Turn Windows features on or off.
-10.	In the Windows Features dialog box, check the Telnet Client check box.
- 
-11.	Click OK. The system will install the appropriate files. This will take a few seconds to a minute. 
-
-a.	Open up CMD Prompt
-b.	enter command: telnet localhost <service port> (use both one of the ports defined in the config files above)
-c.	SUCCESS =  
-d.	to exit telnet, hit ‘ctrl + ]’ then type quit and hit enter
-e.	enter command: telnet localhost <service port> (use the other one of the ports defined in the config files above)
-f.	SUCCESS  
-g.	to exit telnet, hit ‘ctrl + ]’ then type quit and hit enter
-12.	Open up CMD Prompt and Enter the CMD : npm install pm2 -g
-13.	I assume we will package up the WebTrader Engine Start Script for clients.
-a.	make sure we do \ and not /
-14.	Go to GitHub and download the webtrade engine zip. unzip the engine and paste the folder into ChartIQ.
-15.	Open command prompt and navigate to C:\ChartIQ\engine. Enter the command npm install 
-
-16.	Open cmd prompt, navigate to ChartIQ, and type pm2 start engines.json
-
-17.	Download NGINX and unzip to ChartIQ Directory. 
-
-18.	Get the NGINX confi file from github (Nginconf - Single WS domain)
-19.	navigate to ChartIQ\nginx-1.8.1\conf\nginx.conf
-a.	paste github code in here
-b.	Upstream Live {
-ip_hash;
-c.	server localhost: 4040
-}
-d.	ServerName = beeks IP
-e.	Make Sure Upstream Matches engine configuration
-20.	If WebTrader is hosted on the same machine as the engine:
-a.	Specify the location of the app besides ‘root’.
-b.	Make sure Upstream matches engine configuration
-21.	Navigate to C:\ChartIQ\nginx-1.8.1 and double click ‘nginx.exe’
-
-
-
 </div>
