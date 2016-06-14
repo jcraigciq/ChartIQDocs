@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on views, and components
 var ciqDocs = angular.module('ciqDocs', [
-  'ngRoute', 'ngSanitize', 'ngCsv'
+  'ngRoute'
 ])
 .config(['$routeProvider', function($routeProvider) {
 $routeProvider.
