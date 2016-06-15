@@ -1,44 +1,44 @@
 /* app css stylesheet */
 .navbar-default {
-background-image: none;
-background-color: #1C3348;
+  background-image: none;
+  background-color: #1C3348;
 }
 
 .container-nav {
-    margin-left: -1%;
+  margin-left: -1%;
 }
 
 .container-nav a {
-    color: white;
-    font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
 
 .container-nav ul {
-margin-top: 1%;
+  margin-top: 1%;
 }
 
 .container-nav li {
-   display: inline;
-   padding: 1% 0% 0% 2%;
+ display: inline;
+ padding: 1% 0% 0% 2%;
 }
 
 .container-nav img {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: -1;
-    width:150px;
-    height:50px;
-    padding-right:20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  width:150px;
+  height:50px;
+  padding-right:20px;
 }
 
 .container-subnav {
-    position: fixed;
+  position: fixed;
 
 }
 
 .container-subnav a {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .container-subnav ul {
@@ -46,13 +46,13 @@ margin-top: 1%;
 }
 
 .container-subnav li {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .article {
-    margin: 4% 5% 5% 17%;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+  margin: 4% 5% 5% 17%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
 }
 .article h1{
   border-bottom: 1px solid;
@@ -80,52 +80,68 @@ margin-top: 1%;
 }
 
 .articleSection {
-    min-width: 40%;
-    width: 60%;
-    height: 100%;
-    box-shadow:0;
+  min-width: 40%;
+  width: 60%;
+  height: 100%;
+  box-shadow:0;
 }
 
 .MobileSSFloatTop {
-    width: 313px;
-    height: 557px;
-    padding: 0px 10px 30px 0px;
-    float:left;
+  width: 313px;
+  height: 557px;
+  padding: 0px 10px 30px 0px;
+  float:left;
 }
 
 .MobileSSfloat {
-    width: 313px;
-    height: 557px;
-    padding: 0px 10px 50px 0px;
-    float:left;
+  width: 313px;
+  height: 557px;
+  padding: 0px 10px 50px 0px;
+  float:left;
 }
 
 .MobileSS {
-    width: 313px;
-    height: 557px;
+  width: 313px;
+  height: 557px;
 }
 
 .regularSS{
-   width: 674px;
-   height: 382px;
+ width: 674px;
+ height: 382px;
 }
 
 .regularSS-2{
-   width: 677px;
-   height: 322px;
+ width: 677px;
+ height: 322px;
 }
 
 .dialogSS{
-   width: 449px;
-   height: 290px;
+ width: 449px;
+ height: 290px;
 }
 
 .dialogSS-2{
-   width: 459px;
-   height: 378px;
+ width: 459px;
+ height: 378px;
 }
 
 .fullScreenSS{
-   width: 922px;
-   height: 552px;
+ width: 922px;
+ height: 552px;
 }
+
+.copyright span {
+  font-size: 90%;
+  text-align: center;
+  color: #6c737e;
+  width: 100%;
+  display: block;
+}
+
+footer {
+  border-top: 1px solid #868d97;
+  padding-top: 15px;
+  text-align: center;
+}
+
+
