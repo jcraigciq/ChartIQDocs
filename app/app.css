@@ -55,7 +55,8 @@ margin-top: 1%;
     font-size: 14px;
 }
 .article h1{
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
+  margin-right: 40%;
 }
 
 .article h3{

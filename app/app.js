@@ -7,25 +7,25 @@ var ciqDocs = angular.module('ciqDocs', [
 .config(['$routeProvider', function($routeProvider) {
 $routeProvider.
 	when('/home', {
-    templateUrl: 'pages/home/home.html'}).
+    templateUrl: 'pages/home.html'}).
 
 	when('/webTraderGuide', {
-    templateUrl: 'pages/webTraderGuide/webTraderGuide.html'}).
+    templateUrl: 'pages/webTraderGuide.html'}).
 
 	when('/mobileQuickstart', {
-    templateUrl: 'pages/mobileQuickstart/mobileQuickstart.html'}).
+    templateUrl: 'pages/mobileQuickstart.html'}).
 
 	when('/upgradeWebTrader', {
-    templateUrl: 'pages/upgradeWebTrader/upgradeWebTrader.html'}).
+    templateUrl: 'pages/upgradeWebTrader.html'}).
 
   when('/middlewareGuide', {
-    templateUrl: 'pages/middlewareGuide/middlewareGuide.html'}).
+    templateUrl: 'pages/middlewareGuide.html'}).
 
   when('/webTraderPlugin', {
-    templateUrl: 'pages/webTraderPlugin/webTraderPlugin.html'}).
+    templateUrl: 'pages/webTraderPlugin.html'}).
 
   when('/contactUs', {
-    templateUrl: 'pages/contactUs/contactUs.html'}).
+    templateUrl: 'pages/contactUs.html'}).
 
    otherwise({redirectTo: '/home'});
 }]);
