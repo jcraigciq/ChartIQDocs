@@ -24,6 +24,9 @@ $routeProvider.
   when('/webTraderPlugin', {
     templateUrl: 'pages/webTraderPlugin.html'}).
 
+  when('/hostMiddleware', {
+    templateUrl: 'pages/hostMiddleware.html'}).
+
   when('/contactUs', {
     templateUrl: 'pages/contactUs.html'}).
 

@@ -1,0 +1,30 @@
+<div class="article">
+	<h1>Host Middleware for MT4</h1>
+	<div id="requirements" class="articleSection" style="clear:both">
+		<h3>System Requirements</h3>
+		
+<p>Our middleware is written in <a href="http://socket.io" target="_new">nodeJS</a>/<a href="https://nodejs.org/en/" target="_new">socket.io</a>. This provides a Web socket API, allowing you to authenticate MT4 users, retrieve their data, subscribe to real time quotes, trade, and receive other updates from MT4. <a href="https://www.nginx.com/" target="_new">NginX</a> is used as a reverse proxy and load balancer.</p>
+
+<p>Determining the server specifications that you need to host the middleware depends on a few simple questions:<p>  
+<ol>
+<li>How many MT4 servers are you connecting to?</li>
+<li>How many concurrent users will you have trading on each MT4?</li>
+<li>How many instruments will you be trading on each MT4?</li> 
+</ol>
+
+<strong><empasis>Example:</empasis></strong> 
+
+<p>Meeting the following <strong>system requirements</strong> will host middleware for <strong>1 MT4 Server</strong> with <strong>160 concurrent users</strong> and <strong>100 subscribed symbols</strong>.</p>
+
+<strong><u>System Requirements</u></strong>
+<ul>
+<li><strong>Operating System:</strong> Windows Server 2012</li>
+<li><strong>Processor (CPU):</strong> 2.0+ GHz processor (minimum of 4 cores)</li>
+<li><strong>Memory:</strong> 2 GB RAM</li>
+<li><strong>Storage:</strong> 10 GB hard drive</li>
+</ul>
+
+<p>We will be happy to work with you on determining your solution for hosting middleware. The above information should be used as a baseline to help you get started with understanding what will be required to host ChartIQ’s Middleware. For additional assistance, questions, and requests, please contact us at <a href="mailto:webtrader@chartIQ.com">webtrader@chartIQ.com</a>.</p>
+</div>
+
+	
